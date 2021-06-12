@@ -155,7 +155,7 @@ class SegmentedControl: UIControl {
     private func setupSelectionView() {
         addSubview(selectionView)
         selectionView.translatesAutoresizingMaskIntoConstraints = false
-        selectionView.backgroundColor = R.color.main()
+        selectionView.backgroundColor = R.color.tintMain()
         selectionView.isHidden = true
     }
     

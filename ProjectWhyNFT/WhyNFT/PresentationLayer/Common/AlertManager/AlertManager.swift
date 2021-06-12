@@ -58,7 +58,7 @@ final class AlertManager {
         let progressView = JGProgressHUDPieIndicatorView()
         progressHUD.indicatorView = progressView
         
-        progressView.color = R.color.tintColorDark()!
+        progressView.color = R.color.tintDark()!
         progressView.fillColor = R.color.background()!
         
         progressHUD.delegate = delegate

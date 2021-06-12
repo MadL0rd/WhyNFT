@@ -12,6 +12,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var appRouter: AppRouter!
     var window: UIWindow?
+    
+    static var urlHandlers = [(_ : URL) -> Void]()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {                
 
@@ -22,6 +24,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         appRouter.window = window!
         appRouter.handleLaunch()
         
+        return true
+    }
+    
+    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey: Any] = [:]) -> Bool {
+        for handler in AppDelegate.urlHandlers {
+            handler(url)
+        }
         return true
     }
 

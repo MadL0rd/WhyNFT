@@ -14,7 +14,7 @@ class UIStyleManager {
     static func textDefaultInput(_ view: UIView, addHeightConstraint: Bool = true) {
         view.translatesAutoresizingMaskIntoConstraints = false
         view.layer.cornerRadius = 16
-        view.backgroundColor = R.color.lightGray()
+        view.backgroundColor = R.color.tintGray()
 
         guard addHeightConstraint
         else { return }
@@ -24,7 +24,7 @@ class UIStyleManager {
     }
     
     static func shadow(_ view: UIView) {
-        view.layer.shadowColor = R.color.gray()?.cgColor
+        view.layer.shadowColor = R.color.tintGray()?.cgColor
         view.layer.shadowRadius = 4
         view.layer.shadowOpacity = 1
         view.layer.shadowOffset = CGSize(width: 0, height: 4)
@@ -37,6 +37,10 @@ class UIStyleManager {
         controller.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
         controller.navigationBar.shadowImage = UIImage()
         controller.navigationBar.isTranslucent = true
+        
+        controller.navigationBar.barStyle = .black
+        controller.navigationBar.tintColor = R.color.tintMain()
+        controller.navigationBar.topItem?.backButtonTitle = ""
     }
     
     // MARK: - UITextField
@@ -48,10 +52,27 @@ class UIStyleManager {
         textField.setRightPaddingPoints(24)
 
         let attributes = [
-            NSAttributedString.Key.foregroundColor: R.color.gray()!,
+            NSAttributedString.Key.foregroundColor: R.color.tintGray()!,
             NSAttributedString.Key.font: R.font.gilroyRegular(size: 14)!
         ]
         textField.attributedPlaceholder = NSAttributedString(string: placeholderText,
                                                              attributes: attributes)
+    }
+    
+    // MARK: - Buttons
+    
+    static func buttonDefault(_ button: ButtonWithTouchSize) {
+        button.setDefaultAreaPadding()
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.backgroundColor = R.color.tintMain()
+        button.layer.cornerRadius = 16
+        button.titleLabel?.font = R.font.alataRegular(size: 14)
+        button.setTitleColor(.res.tintDark(), for: .normal)
+        button.setTitleColor(.res.tintDark(), for: .selected)
+        button.setTitleColor(.res.tintDark(), for: .highlighted)
+
+        NSLayoutConstraint.activate([
+            button.heightAnchor.constraint(equalToConstant: 62)
+        ])
     }
 }

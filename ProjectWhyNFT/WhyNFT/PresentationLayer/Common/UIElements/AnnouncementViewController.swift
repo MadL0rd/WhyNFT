@@ -21,6 +21,7 @@ class AnnouncementViewController: UIViewController {
         label.numberOfLines = 0
         label.textAlignment = .center
         label.text = R.string.localizable.announcementText()
+        label.textColor = .res.tintMain()
         
         NSLayoutConstraint.activate([
             label.centerYAnchor.constraint(equalTo: view.centerYAnchor),

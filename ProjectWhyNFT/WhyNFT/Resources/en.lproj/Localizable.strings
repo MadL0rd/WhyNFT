@@ -26,3 +26,5 @@
 // Other
 "announcementText" = "Will be added in the next version";
 
+// Authentication
+"signInDribbbleButtonText" = "Sign in with Dribbble";

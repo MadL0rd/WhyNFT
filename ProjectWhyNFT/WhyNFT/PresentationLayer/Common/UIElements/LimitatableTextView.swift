@@ -110,7 +110,7 @@ class LimitatableTextView: UIControl {
         
         addSubview(textEditor)
         textEditor.translatesAutoresizingMaskIntoConstraints = false
-        textEditor.backgroundColor = R.color.lightGray()
+        textEditor.backgroundColor = R.color.backgroundInput()
         textEditor.layer.cornerRadius = 16
         textEditor.delegate = self
         textEditor.textContainerInset = UIEdgeInsets(top: 18, left: 18, bottom: 18, right: 18)
@@ -119,12 +119,12 @@ class LimitatableTextView: UIControl {
         addSubview(countLabel)
         countLabel.translatesAutoresizingMaskIntoConstraints = false
         countLabel.font = R.font.gilroyBold(size: 10)
-        countLabel.textColor = R.color.gray()
+        countLabel.textColor = R.color.tintGray()
         countLabel.alpha = 0.5
         
         addSubview(placeholder)
         placeholder.translatesAutoresizingMaskIntoConstraints = false
-        placeholder.textColor = R.color.tintColorDark()
+        placeholder.textColor = R.color.tintGray()
         placeholder.font = R.font.gilroyRegular(size: 14)
         
         placeholder.text = ""

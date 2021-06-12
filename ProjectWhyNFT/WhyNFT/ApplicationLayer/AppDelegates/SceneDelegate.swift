@@ -12,6 +12,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
     var appRouter: AppRouter!
+    
+    static var urlHandlers = [(_ : URL) -> Void]()
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { 
@@ -25,6 +27,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         appRouter.window = window!
         appRouter.handleLaunch()
         
+    }
+    
+    func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
+        if let urlContext = URLContexts.first {
+            let url = urlContext.url
+            SceneDelegate.urlHandlers.forEach { $0(url) }
+        }
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

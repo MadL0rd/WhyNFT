@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
-	<string>WhyNFT</string>
+	<string>NaFThalene</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -18,6 +18,17 @@
 	<string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLName</key>
+			<string>com.atekutov.whynft</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>nafthalene</string>
+			</array>
+		</dict>
+	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
@@ -37,9 +48,9 @@
 		<string>Gilroy-Regular.ttf</string>
 		<string>Gilroy-Light.ttf</string>
 		<string>Gilroy-Semibold.ttf</string>
-        <string>Gilroy-Bold.ttf</string>
-        <string>MKMEGADRIVE.ttf</string>
-        <string>Alata-Regular.ttf</string>
+		<string>Gilroy-Bold.ttf</string>
+		<string>MKMEGADRIVE.ttf</string>
+		<string>Alata-Regular.ttf</string>
 	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
@@ -64,6 +75,8 @@
 	<array>
 		<string>armv7</string>
 	</array>
+	<key>UIStatusBarStyle</key>
+	<string>UIStatusBarStyleDarkContent</string>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

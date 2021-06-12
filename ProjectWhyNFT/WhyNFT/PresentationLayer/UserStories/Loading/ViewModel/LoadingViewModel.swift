@@ -6,7 +6,11 @@
 //
 
 final class LoadingViewModel {
+    
 	var output: LoadingOutput?
+    
+    var dribbbleService: DribbbleNetworkServiceProtocol!
+
 }
 
 // MARK: - Configuration
@@ -20,5 +24,19 @@ extension LoadingViewModel: LoadingViewModelProtocol {
     func startConfiguration() {
         
     }
+    
+    func checkActiveUser(_ completion: @escaping(Bool) -> Void) {
+        dribbbleService.getCurrentUser { result in
+            switch result {
+            case .success:
+                completion(true)
+                
+            case .failure:
+                completion(false)
+            }
+            
+        }
+    }
+
 }
 
