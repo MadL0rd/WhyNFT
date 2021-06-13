@@ -25,6 +25,7 @@ enum ApiDribbbleRoutes: String, URLConvertible {
     static let endpoint = "https://api.dribbble.com/v2/"
     
     case user = "user/"
+    case shots = "user/shots/"
 
     func asURL() throws -> URL {
         guard let url = URL(string: ApiDribbbleRoutes.endpoint + self.rawValue)

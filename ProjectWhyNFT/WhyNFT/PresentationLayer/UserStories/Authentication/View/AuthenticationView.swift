@@ -10,7 +10,7 @@ import UIKit
 final class AuthenticationView: UIView {
     
     let logo = UIImageView()
-    let signInDribbleButton = ButtonWithTouchSize()
+    let signInDribbbleButton = ButtonWithTouchSize()
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -34,9 +34,9 @@ final class AuthenticationView: UIView {
         logo.contentMode = .scaleAspectFit
         logo.image = R.image.launchLogo()
         
-        addSubview(signInDribbleButton)
-        UIStyleManager.buttonDefault(signInDribbleButton)
-        signInDribbleButton.setTitle(R.string.localizable.signInDribbbleButtonText(), for: .normal)
+        addSubview(signInDribbbleButton)
+        UIStyleManager.buttonDefault(signInDribbbleButton)
+        signInDribbbleButton.setTitle(R.string.localizable.signInDribbbleButtonText(), for: .normal)
 
         makeConstraints()
     }
@@ -47,9 +47,9 @@ final class AuthenticationView: UIView {
             logo.centerXAnchor.constraint(equalTo: centerXAnchor),
             logo.widthAnchor.constraint(equalTo: widthAnchor, multiplier: 0.7),
             
-            signInDribbleButton.centerXAnchor.constraint(equalTo: centerXAnchor),
-            signInDribbleButton.widthAnchor.constraint(equalTo: widthAnchor, constant: -48),
-            signInDribbleButton.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor, constant: -6)
+            signInDribbbleButton.centerXAnchor.constraint(equalTo: centerXAnchor),
+            signInDribbbleButton.widthAnchor.constraint(equalTo: widthAnchor, constant: -48),
+            signInDribbbleButton.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor, constant: -6)
         ])
     }
 }

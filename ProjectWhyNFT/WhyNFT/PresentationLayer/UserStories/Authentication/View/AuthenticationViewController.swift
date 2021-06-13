@@ -27,7 +27,7 @@ final class AuthenticationViewController: UIViewController {
     }
 
     private func configureSelf() {
-        _view.signInDribbleButton.addTarget(self, action: #selector(signInDribbbleButtonDidTapped(sender:)), for: .touchUpInside)
+        _view.signInDribbbleButton.addTarget(self, action: #selector(signInDribbbleButtonDidTapped(sender:)), for: .touchUpInside)
     }
     
     // MARK: - UI elements actions

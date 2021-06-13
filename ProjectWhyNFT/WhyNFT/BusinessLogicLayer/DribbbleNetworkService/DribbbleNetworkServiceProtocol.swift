@@ -11,5 +11,6 @@ protocol DribbbleNetworkServiceProtocol: AnyObject {
     func createTokenAndAuthenticate(completion: @escaping SignInDribbbleCompletion)
     func forgetUserToken()
     func getCurrentUser(completion: @escaping GetDribbbleUserCompletion)
+    func getCurrentUserWorks(page: Int, completion: @escaping GetDribbbleUserWorksCompletion)
 }
 

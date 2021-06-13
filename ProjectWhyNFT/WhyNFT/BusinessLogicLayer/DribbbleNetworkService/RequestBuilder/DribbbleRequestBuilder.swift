@@ -13,6 +13,8 @@ enum DribbbleRequestBuilder {
                     accessCode: String,
                     callbackUrl: String)
     case getUser(token: String)
+    case getUserShots(token: String,
+                      page: Int)
 }
 
 extension DribbbleRequestBuilder: DataRequestExecutable {
@@ -36,6 +38,12 @@ extension DribbbleRequestBuilder: DataRequestExecutable {
         case .getUser(token: let token):
             let header = ApiDribbbleRoutes.makeAuthHeadersFromToken(token: token)
             return AF.request(ApiDribbbleRoutes.user, headers: header)
+            
+        case .getUserShots(token: let token, page: let page):
+            let header = ApiDribbbleRoutes.makeAuthHeadersFromToken(token: token)
+            let parameters: [String: Any] = [ "page": page ]
+            return AF.request(ApiDribbbleRoutes.shots, parameters: parameters, headers: header)
+            
         }
     }
 }

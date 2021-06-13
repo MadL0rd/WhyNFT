@@ -85,8 +85,7 @@ extension DribbbleNetworkService: DribbbleNetworkServiceProtocol {
             
         }
         
-        //        TODO: needs duplicate collision fix
-
+        //        TODO: needs check duplicate collision
         if #available(iOS 13.0, *) {
             SceneDelegate.urlHandlers.append(deeplinkHandler)
         } else {
@@ -108,6 +107,17 @@ extension DribbbleNetworkService: DribbbleNetworkServiceProtocol {
         }
         
         let request = requestBuilder.getUser(token: token)
+        makeDefaultRequest(dataRequest: request, completion: completion)
+    }
+    
+    func getCurrentUserWorks(page: Int, completion: @escaping GetDribbbleUserWorksCompletion) {
+        guard let token = token
+        else {
+            completion(.failure(.badToken))
+            return
+        }
+        
+        let request = requestBuilder.getUserShots(token: token, page: page)
         makeDefaultRequest(dataRequest: request, completion: completion)
     }
 }

@@ -52,6 +52,8 @@ final class LoadingViewController: UIViewController {
             if (haveActiveUser) {
                 self?.coordinator.openModule(.mainMenu, openingMode: .showInNewRootNavigationStack)
             } else {
+                //        TODO: simulator test only
+//                self?.coordinator.openModule(.mainMenu, openingMode: .showInNewRootNavigationStack)
                 self?.coordinator.openModule(.authentication, openingMode: .showInNewRootNavigationStack)
             }
         }

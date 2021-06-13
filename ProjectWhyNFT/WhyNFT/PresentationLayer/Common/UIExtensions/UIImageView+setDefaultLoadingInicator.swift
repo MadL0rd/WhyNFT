@@ -11,6 +11,6 @@ import UIKit
 extension UIImageView {
     
     func setDefaultLoadingInicator() {
-        sd_imageIndicator = SDWebImageActivityIndicator.gray
+        sd_imageIndicator = SDWebImageActivityIndicator.white
     }
 }
