@@ -46,6 +46,7 @@ class DoubleTitledView: UIView {
         subtitleLabel.translatesAutoresizingMaskIntoConstraints = false
         subtitleLabel.textColor = .res.tintLight()
         subtitleLabel.font = R.font.alataRegular(size: 14)
+        subtitleLabel.numberOfLines = 0
         
         makeConstraints()
     }

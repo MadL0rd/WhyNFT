@@ -42,9 +42,15 @@ class LightSelectionCollectionView: UIView {
         return currentSelectedIndexPath?.row
     }
     
-    var longPressHandlerAvailable = true
+    var selectedViewIsHidden: Bool {
+        get { selectionBorderedView.isHidden }
+        set { selectionBorderedView.isHidden = newValue }
+    }
+    
+    var longPressHandlerAvailable = false
     var longPressVibration: UIImpactFeedbackGenerator? = VibroGenerator.heavy
     var longPressSelectedIndexPath: IndexPath?
+    var longPressTooltipView: UIView?
     
     // MARK: - Methods
     
@@ -121,6 +127,48 @@ class LightSelectionCollectionView: UIView {
         startGlowAnimation()
     }
     
+    private func removePreviousTooltip() {
+        if let previousTooltip = longPressTooltipView {
+            UIView.animate(withDuration: 0.3) {
+                previousTooltip.alpha = 0
+            }
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+                previousTooltip.removeFromSuperview()
+            }
+        }
+    }
+    
+    private func spawnTooltipOn(_ view: UIView) {
+        removePreviousTooltip()
+        
+        guard let index = longPressSelectedIndexPath?.row,
+              let tooltipText = delegate?.lightSelectionCollectionView(tooltipFor: self, itemLongPressStart: index)
+        else { return }
+        
+        let tooltip = PaddingLabel(withInsets: 12, 12, 12, 12)
+        tooltip.alpha = 0
+        addSubview(tooltip)
+        tooltip.translatesAutoresizingMaskIntoConstraints = false
+        tooltip.text = tooltipText
+        tooltip.font = R.font.alataRegular(size: 10)
+        tooltip.roundCorners(corners: [.bottomRight, .topLeft], radius: 12)
+        tooltip.backgroundColor = .res.backgroundInput()
+        tooltip.textColor = .res.tintLight()
+        tooltip.numberOfLines = 0
+        
+        NSLayoutConstraint.activate([
+            tooltip.centerYAnchor.constraint(equalTo: view.topAnchor),
+            tooltip.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            tooltip.widthAnchor.constraint(equalToConstant: cellWidth - 16)
+        ])
+        
+        UIView.animate(withDuration: 0.3) {
+            tooltip.alpha = 1
+        }
+        
+        longPressTooltipView = tooltip
+    }
+    
     // MARK: - UI elements actions
 
     @objc private func handleLongPress(gestureRecognizer: UILongPressGestureRecognizer) {
@@ -138,11 +186,13 @@ class LightSelectionCollectionView: UIView {
                     UIView.animate(withDuration: 0.3) {
                         cell.transform = .init(scaleX: 1, y: 1)
                     }
+                    removePreviousTooltip()
                 }
                 
                 longPressSelectedIndexPath = indexPath
                 
                 if let cell = collectionView.cellForItem(at: indexPath) {
+                    spawnTooltipOn(cell)
                     UIView.animate(withDuration: 0.3) {
                         cell.transform = .init(scaleX: 1.1, y: 1.1)
                     }
@@ -155,17 +205,20 @@ class LightSelectionCollectionView: UIView {
                     cell.transform = .init(scaleX: 1, y: 1)
                 }
                 longPressSelectedIndexPath = nil
+                removePreviousTooltip()
             }
         }
         
-        if gestureRecognizer.state == .ended,
-           let previousIndexPath = longPressSelectedIndexPath,
-           let cell = collectionView.cellForItem(at: previousIndexPath) {
-            UIView.animate(withDuration: 0.3) {
-                cell.transform = .init(scaleX: 1, y: 1)
+        if gestureRecognizer.state == .ended {
+            removePreviousTooltip()
+            if let previousIndexPath = longPressSelectedIndexPath,
+               let cell = collectionView.cellForItem(at: previousIndexPath) {
+                UIView.animate(withDuration: 0.3) {
+                    cell.transform = .init(scaleX: 1, y: 1)
+                }
+                delegate?.lightSelectionCollectionView(self, itemLongPress: previousIndexPath.row)
+                longPressSelectedIndexPath = nil
             }
-            delegate?.lightSelectionCollectionView(self, itemLongPress: previousIndexPath.row)
-            longPressSelectedIndexPath = nil
         }
     }
     
@@ -207,10 +260,10 @@ class LightSelectionCollectionView: UIView {
         collectionViewLayout.scrollDirection = .vertical
         collectionViewLayout.itemSize = CGSize(width: cellWidth, height: cellHeight)
         collectionView.scrollIndicatorInsets = UIEdgeInsets(top: 70, left: 5, bottom: UIConstants.customTabBarHeight, right: 0)
-        collectionView.contentInset = UIEdgeInsets(top: sideMargin,
-                                                   left: 0,
+        collectionView.contentInset = UIEdgeInsets(top: 100,
+                                                   left: sideMargin,
                                                    bottom: UIConstants.customTabBarHeight,
-                                                   right: 0)
+                                                   right: sideMargin)
         
         collectionView.dataSource = self
         collectionView.delegate = self
@@ -226,8 +279,8 @@ class LightSelectionCollectionView: UIView {
         NSLayoutConstraint.activate([
             collectionView.topAnchor.constraint(equalTo: topAnchor),
             collectionView.bottomAnchor.constraint(equalTo: bottomAnchor),
-            collectionView.leftAnchor.constraint(equalTo: leftAnchor, constant: sideMargin),
-            collectionView.rightAnchor.constraint(equalTo: rightAnchor, constant: -sideMargin),
+            collectionView.centerXAnchor.constraint(equalTo: centerXAnchor),
+            collectionView.widthAnchor.constraint(equalTo: widthAnchor),
             
             selectionGlow.widthAnchor.constraint(equalToConstant: cellWidth * 1.5),
             selectionGlow.heightAnchor.constraint(equalToConstant: cellWidth * 1.5)
@@ -248,7 +301,8 @@ extension LightSelectionCollectionView: UICollectionViewDataSource {
         
         cell.setContent(content: delegate?.lightSelectionCollectionView(self, contentForItem: indexPath.row))
         if delegate?.lightSelectionCollectionView(self, isItemSelectionAvailable: indexPath.row) == true {
-            if currentSelectedIndexPath == indexPath {
+            if currentSelectedIndexPath == indexPath,
+               selectedViewIsHidden == false {
                 cell.setState(state: .selected, animated: true)
             } else {
                 cell.setState(state: .available, animated: true)
@@ -279,6 +333,8 @@ extension LightSelectionCollectionView: UICollectionViewDelegate {
         
         collectionView.scrollToItem(at: indexPath, at: .centeredVertically, animated: true)
         
+        let maxState: LightSelectionCollectionViewCellState = selectedViewIsHidden ? .available : .selected
+        
         if let currentSelectedIndexPath = currentSelectedIndexPath {
             
             let previousSelectedCell = collectionView.cellForItem(at: currentSelectedIndexPath) as? LightSelectionCollectionViewCell
@@ -286,7 +342,7 @@ extension LightSelectionCollectionView: UICollectionViewDelegate {
             
             if currentSelectedIndexPath != indexPath {
                 moveSelectionView(withCenterIn: cell)
-                cell.setState(state: .selected, animated: true)
+                cell.setState(state: maxState, animated: true)
                 
                 self.currentSelectedIndexPath = indexPath
             } else {
@@ -297,7 +353,7 @@ extension LightSelectionCollectionView: UICollectionViewDelegate {
         } else {
             spawnSelectionView(withCenterIn: cell)
             currentSelectedIndexPath = indexPath
-            cell.setState(state: .selected, animated: true)
+            cell.setState(state: maxState, animated: true)
         }
     }
     

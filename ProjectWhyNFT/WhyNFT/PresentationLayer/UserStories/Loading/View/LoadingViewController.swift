@@ -54,7 +54,7 @@ final class LoadingViewController: UIViewController {
             } else {
                 //        TODO: simulator test only
 //                self?.coordinator.openModule(.mainMenu, openingMode: .showInNewRootNavigationStack)
-                self?.coordinator.openModule(.authentication, openingMode: .showInNewRootNavigationStack)
+                self?.coordinator.openModule(.portfolioAuthentication, openingMode: .showInNewRootNavigationStack)
             }
         }
     }

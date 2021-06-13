@@ -26,9 +26,13 @@
 // Other
 "announcementText" = "Will be added in the next version";
 
-// Authentication
-"signInDribbbleButtonText" = "Sign in with Dribbble";
+// PortfolioAuthentication
+"portfolioAuthenticationTitle" = "Connect Portfolio";
+"portfolioAuthenticationSubtitle" = "Link the services you use to host your portfolio to create an NFT from your art";
+"portfolioAuthenticationDribbbleName" = "Dribbble";
+"portfolioAuthenticationBehanceName" = "Behance";
 
 // Works
 "addNewItem" = "Add new item";
 "addNewItemSubtitle" = "Choose shot from your Dribbble";
+"worksTooltipOpenInBrowser" = "Open work page in browser";

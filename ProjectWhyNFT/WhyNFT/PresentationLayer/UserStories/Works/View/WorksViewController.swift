@@ -90,6 +90,10 @@ extension WorksViewController: LightSelectionCollectionViewDelegate {
         
     }
     
+    func lightSelectionCollectionView(tooltipFor collection: LightSelectionCollectionView, itemLongPressStart itemIndex: Int) -> String? {
+        return R.string.localizable.worksTooltipOpenInBrowser()
+    }
+    
     func lightSelectionCollectionView(_ collection: LightSelectionCollectionView, itemLongPress itemIndex: Int) {
         viewModel.openArtWorkPage(itemIndex)
     }

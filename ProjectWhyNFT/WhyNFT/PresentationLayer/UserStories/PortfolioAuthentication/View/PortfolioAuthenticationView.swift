@@ -1,19 +1,18 @@
 //
-//  WorksView.swift
+//  PortfolioAuthenticationView.swift
 //  WhyNFT
 //
-//  Created by Антон Текутов on 12.06.2021.
+//  Created by Антон Текутов on 13.06.2021.
 //
 
 import UIKit
 
-final class WorksView: UIView {
+final class PortfolioAuthenticationView: UIView {
     
     let titleBackground = UIView()
     let titlesView = DoubleTitledView()
     
     let itemsCollection = LightSelectionCollectionView()
-    let refreshControl = UIRefreshControl()
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -26,22 +25,16 @@ final class WorksView: UIView {
         
         setupView()
     }
-    
-    func resetMixedFontLabelsText() {
-        titlesView.titleLabel.setMixedFontText(R.string.localizable.addNewItem())
-    }
 
     // MARK: - Private methods
     
     private func setupView() {
+        
         backgroundColor = .res.background()
         
         addSubview(itemsCollection)
         itemsCollection.translatesAutoresizingMaskIntoConstraints = false
-        itemsCollection.longPressHandlerAvailable = true
-        
-        refreshControl.tintColor = .res.tintMain()
-        itemsCollection.collectionView.refreshControl = refreshControl
+        itemsCollection.selectedViewIsHidden = true
         
         addSubview(titleBackground)
         titleBackground.translatesAutoresizingMaskIntoConstraints = false
@@ -50,10 +43,9 @@ final class WorksView: UIView {
         
         addSubview(titlesView)
         titlesView.translatesAutoresizingMaskIntoConstraints = false
-        titlesView.subtitleLabel.text = R.string.localizable.addNewItemSubtitle()
-        
-        resetMixedFontLabelsText()
-        
+        titlesView.setTitles(title: R.string.localizable.portfolioAuthenticationTitle(),
+                             subtitle: R.string.localizable.portfolioAuthenticationSubtitle())
+
         makeConstraints()
     }
 

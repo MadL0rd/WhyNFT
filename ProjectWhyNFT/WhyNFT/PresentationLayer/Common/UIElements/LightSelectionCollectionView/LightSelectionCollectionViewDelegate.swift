@@ -14,6 +14,7 @@ protocol LightSelectionCollectionViewDelegate: AnyObject {
     func lightSelectionCollectionView(_ collection: LightSelectionCollectionView, isItemSelectionAvailable itemIndex: Int) -> Bool
     func lightSelectionCollectionView(_ collection: LightSelectionCollectionView, itemDidTapped itemIndex: Int)
     func lightSelectionCollectionView(_ collection: LightSelectionCollectionView, selectedItemDidChanged itemIndex: Int?)
+    func lightSelectionCollectionView(tooltipFor collection: LightSelectionCollectionView, itemLongPressStart itemIndex: Int) -> String?
     func lightSelectionCollectionView(_ collection: LightSelectionCollectionView, itemLongPress itemIndex: Int)
     func lightSelectionCollectionView(didScrolledToLastItem collection: LightSelectionCollectionView)
 }
