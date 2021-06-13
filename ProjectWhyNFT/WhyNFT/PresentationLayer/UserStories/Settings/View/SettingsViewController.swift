@@ -113,7 +113,10 @@ final class SettingsViewController: UIViewController {
         module.rows.append(contentsOf: [
             .init(image: R.image.settingsWallet(),
                   title: R.string.localizable.settingsLogOutFromWallet(),
-                  action: {})
+                  action: { [ weak self ] in
+                    self?.viewModel.logOutRarible()
+                    self?.coordinator.openModule(.loading, openingMode: .showInNewRootNavigationStack)
+                  })
         ])
         menu.append(module)
     }

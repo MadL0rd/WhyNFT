@@ -22,7 +22,7 @@ class DribbbleNetworkService: NetworkService {
         super.init()
         
         let storrage = SecureStorage.shared
-        token = storrage.getStringValue(for: .userToken)
+        token = storrage.getStringValue(for: .userTokenDrobbble)
     }
     
     private func saveTokenInStorrage() {
@@ -30,7 +30,7 @@ class DribbbleNetworkService: NetworkService {
         else { return }
         
         let storrage = SecureStorage.shared
-        try? storrage.set(token, for: .userToken)
+        try? storrage.set(token, for: .userTokenDrobbble)
     }
 }
 

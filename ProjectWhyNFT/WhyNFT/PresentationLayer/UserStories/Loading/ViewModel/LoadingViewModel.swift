@@ -10,7 +10,7 @@ final class LoadingViewModel {
 	var output: LoadingOutput?
     
     var dribbbleService: DribbbleNetworkServiceProtocol!
-
+    var raribleService: RaribleNetworkServiceProtocol!
 }
 
 // MARK: - Configuration
@@ -25,7 +25,7 @@ extension LoadingViewModel: LoadingViewModelProtocol {
         
     }
     
-    func checkActiveUser(_ completion: @escaping(Bool) -> Void) {
+    func checkActiveUserPortfolio(_ completion: @escaping(Bool) -> Void) {
         dribbbleService.getCurrentUser { result in
             switch result {
             case .success:
@@ -38,5 +38,17 @@ extension LoadingViewModel: LoadingViewModelProtocol {
         }
     }
 
+    func checkActiveUserRarible(_ completion: @escaping(Bool) -> Void) {
+        raribleService.validateUserId { result in
+            switch result {
+            case .success(let data):
+                completion(data)
+                
+            case .failure(let error):
+                print(error)
+            }
+            
+        }
+    }
 }
 

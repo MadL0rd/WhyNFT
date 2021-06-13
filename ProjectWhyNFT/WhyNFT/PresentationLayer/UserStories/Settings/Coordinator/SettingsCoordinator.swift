@@ -20,6 +20,7 @@ final class SettingsCoordinator: DefaultCoordinator {
         coordinator.transition = view
         
         viewModel.dribbbleService = DribbbleNetworkService.shared
+        viewModel.raribleService = RaribleNetworkService.shared
 
         if let configuration = configuration {
             configuration(viewModel)

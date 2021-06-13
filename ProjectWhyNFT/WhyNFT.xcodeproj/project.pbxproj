@@ -68,6 +68,21 @@
 		894065EC261328E100DC682F /* Gilroy-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 894065E8261328E100DC682F /* Gilroy-Bold.ttf */; };
 		894952012674F8A3000CACB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 894952002674F8A3000CACB5 /* Assets.xcassets */; };
 		894B1EBE26751AAB00EF8277 /* LabelMixedFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894B1EBD26751AAB00EF8277 /* LabelMixedFont.swift */; };
+		8960BDD02676008000830681 /* RaribleNetworkServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8960BDC72676008000830681 /* RaribleNetworkServiceProtocol.swift */; };
+		8960BDD12676008000830681 /* RaribleRequestResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8960BDC92676008000830681 /* RaribleRequestResults.swift */; };
+		8960BDD22676008000830681 /* RaribleErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8960BDCA2676008000830681 /* RaribleErrors.swift */; };
+		8960BDD32676008000830681 /* RaribleCompletionTypealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8960BDCB2676008000830681 /* RaribleCompletionTypealiases.swift */; };
+		8960BDD42676008000830681 /* RaribleNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8960BDCC2676008000830681 /* RaribleNetworkService.swift */; };
+		8960BDD52676008000830681 /* RaribleRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8960BDCE2676008000830681 /* RaribleRoutes.swift */; };
+		8960BDD62676008000830681 /* RaribleRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8960BDCF2676008000830681 /* RaribleRequestBuilder.swift */; };
+		8960BDFB2676050100830681 /* RaribleAuthenticationViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8960BDF12676050100830681 /* RaribleAuthenticationViewModelProtocol.swift */; };
+		8960BDFC2676050100830681 /* RaribleAuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8960BDF22676050100830681 /* RaribleAuthenticationViewModel.swift */; };
+		8960BDFD2676050100830681 /* RaribleAuthenticationInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8960BDF32676050100830681 /* RaribleAuthenticationInput.swift */; };
+		8960BDFE2676050100830681 /* RaribleAuthenticationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8960BDF52676050100830681 /* RaribleAuthenticationCoordinator.swift */; };
+		8960BDFF2676050100830681 /* RaribleAuthenticationCoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8960BDF62676050100830681 /* RaribleAuthenticationCoordinatorProtocol.swift */; };
+		8960BE002676050100830681 /* RaribleAuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8960BDF82676050100830681 /* RaribleAuthenticationView.swift */; };
+		8960BE012676050100830681 /* RaribleAuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8960BDF92676050100830681 /* RaribleAuthenticationViewController.swift */; };
+		8960BE022676050100830681 /* RaribleAuthenticationOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8960BDFA2676050100830681 /* RaribleAuthenticationOutput.swift */; };
 		8965F0E22675550D00454B69 /* DribbbbleWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8965F0E12675550D00454B69 /* DribbbbleWork.swift */; };
 		8965F0E42675552E00454B69 /* ArtWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8965F0E32675552E00454B69 /* ArtWork.swift */; };
 		8965F0E726756C2600454B69 /* LightSelectionCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8965F0E626756C2600454B69 /* LightSelectionCollectionView.swift */; };
@@ -251,6 +266,21 @@
 		894065E8261328E100DC682F /* Gilroy-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Bold.ttf"; sourceTree = "<group>"; };
 		894952002674F8A3000CACB5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		894B1EBD26751AAB00EF8277 /* LabelMixedFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelMixedFont.swift; sourceTree = "<group>"; };
+		8960BDC72676008000830681 /* RaribleNetworkServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RaribleNetworkServiceProtocol.swift; sourceTree = "<group>"; };
+		8960BDC92676008000830681 /* RaribleRequestResults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RaribleRequestResults.swift; sourceTree = "<group>"; };
+		8960BDCA2676008000830681 /* RaribleErrors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RaribleErrors.swift; sourceTree = "<group>"; };
+		8960BDCB2676008000830681 /* RaribleCompletionTypealiases.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RaribleCompletionTypealiases.swift; sourceTree = "<group>"; };
+		8960BDCC2676008000830681 /* RaribleNetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RaribleNetworkService.swift; sourceTree = "<group>"; };
+		8960BDCE2676008000830681 /* RaribleRoutes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RaribleRoutes.swift; sourceTree = "<group>"; };
+		8960BDCF2676008000830681 /* RaribleRequestBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RaribleRequestBuilder.swift; sourceTree = "<group>"; };
+		8960BDF12676050100830681 /* RaribleAuthenticationViewModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RaribleAuthenticationViewModelProtocol.swift; sourceTree = "<group>"; };
+		8960BDF22676050100830681 /* RaribleAuthenticationViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RaribleAuthenticationViewModel.swift; sourceTree = "<group>"; };
+		8960BDF32676050100830681 /* RaribleAuthenticationInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RaribleAuthenticationInput.swift; sourceTree = "<group>"; };
+		8960BDF52676050100830681 /* RaribleAuthenticationCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RaribleAuthenticationCoordinator.swift; sourceTree = "<group>"; };
+		8960BDF62676050100830681 /* RaribleAuthenticationCoordinatorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RaribleAuthenticationCoordinatorProtocol.swift; sourceTree = "<group>"; };
+		8960BDF82676050100830681 /* RaribleAuthenticationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RaribleAuthenticationView.swift; sourceTree = "<group>"; };
+		8960BDF92676050100830681 /* RaribleAuthenticationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RaribleAuthenticationViewController.swift; sourceTree = "<group>"; };
+		8960BDFA2676050100830681 /* RaribleAuthenticationOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RaribleAuthenticationOutput.swift; sourceTree = "<group>"; };
 		8965F0E12675550D00454B69 /* DribbbbleWork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DribbbbleWork.swift; sourceTree = "<group>"; };
 		8965F0E32675552E00454B69 /* ArtWork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtWork.swift; sourceTree = "<group>"; };
 		8965F0E626756C2600454B69 /* LightSelectionCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightSelectionCollectionView.swift; sourceTree = "<group>"; };
@@ -663,6 +693,75 @@
 			path = Gilroy;
 			sourceTree = "<group>";
 		};
+		8960BDC62676008000830681 /* RaribleNetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				8960BDC82676008000830681 /* Entities */,
+				8960BDCD2676008000830681 /* RequestBuilder */,
+				8960BDC72676008000830681 /* RaribleNetworkServiceProtocol.swift */,
+				8960BDCC2676008000830681 /* RaribleNetworkService.swift */,
+			);
+			path = RaribleNetworkService;
+			sourceTree = "<group>";
+		};
+		8960BDC82676008000830681 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				8960BDC92676008000830681 /* RaribleRequestResults.swift */,
+				8960BDCA2676008000830681 /* RaribleErrors.swift */,
+				8960BDCB2676008000830681 /* RaribleCompletionTypealiases.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		8960BDCD2676008000830681 /* RequestBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				8960BDCE2676008000830681 /* RaribleRoutes.swift */,
+				8960BDCF2676008000830681 /* RaribleRequestBuilder.swift */,
+			);
+			path = RequestBuilder;
+			sourceTree = "<group>";
+		};
+		8960BDEF2676050100830681 /* RaribleAuthentication */ = {
+			isa = PBXGroup;
+			children = (
+				8960BDF32676050100830681 /* RaribleAuthenticationInput.swift */,
+				8960BDFA2676050100830681 /* RaribleAuthenticationOutput.swift */,
+				8960BDF42676050100830681 /* Coordinator */,
+				8960BDF02676050100830681 /* ViewModel */,
+				8960BDF72676050100830681 /* View */,
+			);
+			path = RaribleAuthentication;
+			sourceTree = "<group>";
+		};
+		8960BDF02676050100830681 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8960BDF12676050100830681 /* RaribleAuthenticationViewModelProtocol.swift */,
+				8960BDF22676050100830681 /* RaribleAuthenticationViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8960BDF42676050100830681 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				8960BDF52676050100830681 /* RaribleAuthenticationCoordinator.swift */,
+				8960BDF62676050100830681 /* RaribleAuthenticationCoordinatorProtocol.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		8960BDF72676050100830681 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8960BDF92676050100830681 /* RaribleAuthenticationViewController.swift */,
+				8960BDF82676050100830681 /* RaribleAuthenticationView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		8965F0E0267554F500454B69 /* Dribbble */ = {
 			isa = PBXGroup;
 			children = (
@@ -945,6 +1044,7 @@
 			isa = PBXGroup;
 			children = (
 				8978165C2674E36C00710B13 /* StorageService */,
+				8960BDC62676008000830681 /* RaribleNetworkService */,
 				8978164B2674C93200710B13 /* DribbbleNetworkService */,
 			);
 			path = BusinessLogicLayer;
@@ -1018,6 +1118,7 @@
 				894064A126122D0100DC682F /* UserStoriesModulesAccounting.swift */,
 				8940651D2612327B00DC682F /* Loading */,
 				8965F0F42675AE0C00454B69 /* PortfolioAuthentication */,
+				8960BDEF2676050100830681 /* RaribleAuthentication */,
 				8978166B2674EE1D00710B13 /* MainMenu */,
 				89F275BC26750A1E005DFA9F /* SalesHistory */,
 				89F275B026750A1E005DFA9F /* Works */,
@@ -1372,6 +1473,7 @@
 				89F2759B26750534005DFA9F /* TabBarModuleTransitionHandler.swift in Sources */,
 				897816622674E36C00710B13 /* SettingsStoring.swift in Sources */,
 				894064DA2612308800DC682F /* PickerViewManager.swift in Sources */,
+				8960BE002676050100830681 /* RaribleAuthenticationView.swift in Sources */,
 				8978167B2674EE1D00710B13 /* MainMenuInput.swift in Sources */,
 				894064E72612308800DC682F /* UIScrollView+ScrollToBottom.swift in Sources */,
 				89F275DF26750A1E005DFA9F /* SalesHistoryInput.swift in Sources */,
@@ -1388,9 +1490,12 @@
 				8940652B2612327C00DC682F /* LoadingOutput.swift in Sources */,
 				897816592674C93200710B13 /* DribbbleCompletionTypealiases.swift in Sources */,
 				89DD264B25DC9F0000AD2868 /* R.generated.swift in Sources */,
+				8960BDFC2676050100830681 /* RaribleAuthenticationViewModel.swift in Sources */,
 				8940652F2612327C00DC682F /* LoadingViewController.swift in Sources */,
 				894064DB2612308800DC682F /* UIView+TapAnimation.swift in Sources */,
+				8960BDD02676008000830681 /* RaribleNetworkServiceProtocol.swift in Sources */,
 				897816792674EE1D00710B13 /* MainMenuCoordinator.swift in Sources */,
+				8960BDFE2676050100830681 /* RaribleAuthenticationCoordinator.swift in Sources */,
 				8965F14F2675DAD900454B69 /* WorkDetailsEditorOutput.swift in Sources */,
 				8965F0ED26756F0A00454B69 /* LightSelectionCollectionMenuItem.swift in Sources */,
 				8978167A2674EE1D00710B13 /* MainMenuCoordinatorProtocol.swift in Sources */,
@@ -1408,6 +1513,7 @@
 				894064DF2612308800DC682F /* UIImageView+setDefaultLoadingInicator.swift in Sources */,
 				8965F1212675C5A600454B69 /* Array+isNotEmpty.swift in Sources */,
 				89F275D926750A1E005DFA9F /* SalesHistoryViewModelProtocol.swift in Sources */,
+				8960BDD62676008000830681 /* RaribleRequestBuilder.swift in Sources */,
 				897816632674E36C00710B13 /* SecureStorage.swift in Sources */,
 				8965F1072675AE0D00454B69 /* PortfolioAuthenticationInput.swift in Sources */,
 				89F275DB26750A1E005DFA9F /* SalesHistoryCoordinatorProtocol.swift in Sources */,
@@ -1431,6 +1537,7 @@
 				8940645626122B7600DC682F /* DataRequestExecutable.swift in Sources */,
 				8965F1332675CC4300454B69 /* AboutUsCoordinatorProtocol.swift in Sources */,
 				8965F14E2675DAD900454B69 /* WorkDetailsEditorViewController.swift in Sources */,
+				8960BDD22676008000830681 /* RaribleErrors.swift in Sources */,
 				894064E82612308800DC682F /* UITextField+placeholderPadding.swift in Sources */,
 				8965F1032675AE0D00454B69 /* PortfolioAuthenticationCoordinatorProtocol.swift in Sources */,
 				89E608662658897C00E6707C /* Contacts.swift in Sources */,
@@ -1443,15 +1550,19 @@
 				8940645526122B7600DC682F /* NetworkErrors.swift in Sources */,
 				8965F1352675CC4300454B69 /* AboutUsInput.swift in Sources */,
 				8965F14D2675DAD900454B69 /* WorkDetailsEditorView.swift in Sources */,
+				8960BDD12676008000830681 /* RaribleRequestResults.swift in Sources */,
 				894064ED2612308800DC682F /* LimitatableTextView.swift in Sources */,
 				89F275D026750A1E005DFA9F /* WorksViewModelProtocol.swift in Sources */,
 				894064D92612308800DC682F /* ColorPickerView.swift in Sources */,
 				8965F0EF26757CAC00454B69 /* DoubleTitledView.swift in Sources */,
 				8940645226122B7600DC682F /* CustomArrayEncoding.swift in Sources */,
 				89F275D526750A1E005DFA9F /* WorksOutput.swift in Sources */,
+				8960BDD32676008000830681 /* RaribleCompletionTypealiases.swift in Sources */,
 				8965F11A2675C21700454B69 /* SettingsTableViewCell.swift in Sources */,
+				8960BE012676050100830681 /* RaribleAuthenticationViewController.swift in Sources */,
 				89F00AB12542E16200D482F6 /* MainAppRouter.swift in Sources */,
 				8965F1192675C21700454B69 /* SettingsView.swift in Sources */,
+				8960BDFD2676050100830681 /* RaribleAuthenticationInput.swift in Sources */,
 				89F2759D2675056A005DFA9F /* CustomTabBar.swift in Sources */,
 				8965F14B2675DAD900454B69 /* WorkDetailsEditorCoordinatorProtocol.swift in Sources */,
 				894064DC2612308800DC682F /* UIView+layerAnimation.swift in Sources */,
@@ -1464,6 +1575,7 @@
 				894064E62612308800DC682F /* UIColor+rgba.swift in Sources */,
 				8965F1152675C21700454B69 /* SettingsViewModelProtocol.swift in Sources */,
 				894065302612327C00DC682F /* LoadingInput.swift in Sources */,
+				8960BE022676050100830681 /* RaribleAuthenticationOutput.swift in Sources */,
 				894064EB2612308800DC682F /* UIViewController+ModuleTransitionHandler.swift in Sources */,
 				897816772674EE1D00710B13 /* MainMenuViewModelProtocol.swift in Sources */,
 				897816572674C93200710B13 /* DribbbleErrors.swift in Sources */,
@@ -1474,14 +1586,18 @@
 				894064F62612308800DC682F /* ButtonWithTouchSize.swift in Sources */,
 				89E608672658897C00E6707C /* LocalOnlyConstants.swift in Sources */,
 				892B1FA0261D2EA200329B0A /* UserDefaults+color.swift in Sources */,
+				8960BDFF2676050100830681 /* RaribleAuthenticationCoordinatorProtocol.swift in Sources */,
 				894065292612327C00DC682F /* LoadingViewModelProtocol.swift in Sources */,
+				8960BDFB2676050100830681 /* RaribleAuthenticationViewModelProtocol.swift in Sources */,
 				897816642674E36C00710B13 /* UserDefaultsStorage.swift in Sources */,
 				894064F42612308800DC682F /* ContentFittingTableView.swift in Sources */,
 				894064DE2612308800DC682F /* UIViewController+Keyboard.swift in Sources */,
 				8965F1052675AE0D00454B69 /* PortfolioAuthenticationViewController.swift in Sources */,
 				894064E92612308800DC682F /* UIStyleManager.swift in Sources */,
 				8940652E2612327C00DC682F /* LoadingView.swift in Sources */,
+				8960BDD52676008000830681 /* RaribleRoutes.swift in Sources */,
 				89F275DC26750A1E005DFA9F /* SalesHistoryOutput.swift in Sources */,
+				8960BDD42676008000830681 /* RaribleNetworkService.swift in Sources */,
 				8940652D2612327C00DC682F /* LoadingCoordinatorProtocol.swift in Sources */,
 				8965F0EB26756E8000454B69 /* LightSelectionCollectionViewCell.swift in Sources */,
 				8965F1062675AE0D00454B69 /* PortfolioAuthenticationView.swift in Sources */,
@@ -1649,7 +1765,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.atekutov.whynft;
+				PRODUCT_BUNDLE_IDENTIFIER = com.atekutov.nafthalene;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SWIFT_SWIFT3_OBJC_INFERENCE = YES;
@@ -1672,7 +1788,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.atekutov.whynft;
+				PRODUCT_BUNDLE_IDENTIFIER = com.atekutov.nafthalene;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SWIFT_SWIFT3_OBJC_INFERENCE = YES;
@@ -1706,7 +1822,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.atekutov.whynft;
+				PRODUCT_BUNDLE_IDENTIFIER = com.atekutov.nafthalene;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SWIFT_SWIFT3_OBJC_INFERENCE = YES;

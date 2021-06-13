@@ -9,5 +9,6 @@ import Foundation
 
 enum StorageItemKey: String {
     
-    case userToken
+    case userTokenDrobbble
+    case userIdRarible
 }

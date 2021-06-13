@@ -14,6 +14,7 @@ protocol SettingsViewModelProtocol: AnyObject {
 //    var supportUrl: URL? { get }
 //    
 //    func rateApp()
-    
+        
     func disconnectFromDribbble()
+    func logOutRarible()
 }

@@ -18,6 +18,7 @@ enum UserStoriesModulesDefault: ModuleGenerator {
     case mainMenu
     case salesHistory
     case portfolioAuthentication
+    case raribleAuthentication
 
     func createModule() -> UIViewController {
         switch self {
@@ -37,6 +38,8 @@ enum UserStoriesModulesDefault: ModuleGenerator {
             return SalesHistoryCoordinator.createModule()
         case .portfolioAuthentication: 
             return PortfolioAuthenticationCoordinator.createModule()
+        case .raribleAuthentication: 
+            return RaribleAuthenticationCoordinator.createModule()
         }
     }
 }
@@ -51,6 +54,7 @@ enum UserStoriesModulesWithOutput: ModuleGenerator {
     case mainMenu(output: MainMenuOutput)
     case salesHistory(output: SalesHistoryOutput)
     case portfolioAuthentication(output: PortfolioAuthenticationOutput)
+    case raribleAuthentication(output: RaribleAuthenticationOutput)
 
     func createModule() -> UIViewController {
         switch self {
@@ -91,6 +95,11 @@ enum UserStoriesModulesWithOutput: ModuleGenerator {
             
         case .portfolioAuthentication(let output): 
             return PortfolioAuthenticationCoordinator.createModule { viewModel in 
+                viewModel.output = output
+            }
+            
+        case .raribleAuthentication(let output): 
+            return RaribleAuthenticationCoordinator.createModule { viewModel in 
                 viewModel.output = output
             }
             

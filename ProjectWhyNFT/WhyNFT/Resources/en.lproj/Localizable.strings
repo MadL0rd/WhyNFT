@@ -35,6 +35,11 @@
 "portfolioAuthenticationDribbbleName" = "Dribbble";
 "portfolioAuthenticationBehanceName" = "Behance";
 
+// RaribleAuthentication
+"raribleAuthenticationInputPlaceholder" = "ID Code";
+"raribleAuthenticationLinkButton" = "Go to Rarible";
+"raribleAuthenticationSignInButton" = "Sign in";
+
 // SalesHistory
 "salesHistoryTitle" = "Your NFTs";
 "salesHistorySubitle" = "Status and history of your NFTs";

@@ -38,7 +38,7 @@ final class LoadingViewController: UIViewController {
         viewModel.startConfiguration()
         
         _view.hideLogo()
-        DispatchQueue.main.asyncAfter(deadline: .now() + _view.hideLogoDuration * 0.7) { [ weak self ] in
+        DispatchQueue.main.asyncAfter(deadline: .now() + _view.hideLogoDuration * 0.3) { [ weak self ] in
             self?.checkAvailableUser()
         }
     }
@@ -47,13 +47,18 @@ final class LoadingViewController: UIViewController {
         let loadingHUD = AlertManager.getLoadingHUD(on: view)
         loadingHUD.show(in: view)
         
-        viewModel.checkActiveUser { [ weak self ] haveActiveUser in
-            loadingHUD.dismiss()
+        viewModel.checkActiveUserPortfolio { [ weak self ] haveActiveUser in
             if (haveActiveUser) {
-                self?.coordinator.openModule(.mainMenu, openingMode: .showInNewRootNavigationStack)
+                self?.viewModel.checkActiveUserRarible { [ weak self ] haveActiveWallet in
+                    loadingHUD.dismiss()
+                    if haveActiveWallet {
+                        self?.coordinator.openModule(.mainMenu, openingMode: .showInNewRootNavigationStack)
+                    } else {
+                        self?.coordinator.openModule(.raribleAuthentication, openingMode: .showInNewRootNavigationStack)
+                    }
+                }
             } else {
-                //        TODO: simulator test only
-//                self?.coordinator.openModule(.mainMenu, openingMode: .showInNewRootNavigationStack)
+                loadingHUD.dismiss()
                 self?.coordinator.openModule(.portfolioAuthentication, openingMode: .showInNewRootNavigationStack)
             }
         }

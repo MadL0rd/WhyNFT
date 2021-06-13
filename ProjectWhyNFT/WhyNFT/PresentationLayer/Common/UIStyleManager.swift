@@ -13,13 +13,15 @@ class UIStyleManager {
     
     static func textDefaultInput(_ view: UIView, addHeightConstraint: Bool = true) {
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.layer.cornerRadius = 16
-        view.backgroundColor = R.color.tintGray()
+        view.layer.cornerRadius = 12
+        view.backgroundColor = R.color.backgroundInput()
+        view.layer.borderWidth = 1
+        view.layer.borderColor = R.color.tintMain()?.cgColor
 
         guard addHeightConstraint
         else { return }
         NSLayoutConstraint.activate([
-            view.heightAnchor.constraint(equalToConstant: 48)
+            view.heightAnchor.constraint(equalToConstant: 50)
         ])
     }
     
@@ -47,13 +49,15 @@ class UIStyleManager {
     
     static func textFieldDefault(textField: UITextField, placeholderText: String) {
         textDefaultInput(textField)
-        textField.font = R.font.gilroyBold(size: 14)
+        textField.font = R.font.alataRegular(size: 16)
         textField.setLeftPaddingPoints(24)
         textField.setRightPaddingPoints(24)
+        textField.textColor = .res.tintLight()
+        textField.tintColor = .res.tintMain()
 
         let attributes = [
             NSAttributedString.Key.foregroundColor: R.color.tintGray()!,
-            NSAttributedString.Key.font: R.font.gilroyRegular(size: 14)!
+            NSAttributedString.Key.font: R.font.alataRegular(size: 14)!
         ]
         textField.attributedPlaceholder = NSAttributedString(string: placeholderText,
                                                              attributes: attributes)

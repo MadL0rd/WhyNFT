@@ -8,5 +8,6 @@
 protocol LoadingViewModelProtocol: AnyObject {
     
     func startConfiguration()
-    func checkActiveUser(_ completion: @escaping(Bool) -> Void)
+    func checkActiveUserPortfolio(_ completion: @escaping(Bool) -> Void)
+    func checkActiveUserRarible(_ completion: @escaping(Bool) -> Void)
 }

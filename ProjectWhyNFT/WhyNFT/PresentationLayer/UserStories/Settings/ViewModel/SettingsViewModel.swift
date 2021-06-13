@@ -13,6 +13,7 @@ final class SettingsViewModel {
 	var output: SettingsOutput?
     
     var dribbbleService: DribbbleNetworkServiceProtocol!
+    var raribleService: RaribleNetworkServiceProtocol!
 }
 
 // MARK: - Configuration
@@ -39,6 +40,10 @@ extension SettingsViewModel: SettingsViewModelProtocol {
     
     func disconnectFromDribbble() {
         dribbbleService.forgetUserToken()
+    }
+    
+    func logOutRarible() {
+        raribleService.forgetUserId()
     }
 
 }
