@@ -97,7 +97,9 @@ extension DribbbleNetworkService: DribbbleNetworkServiceProtocol {
     
     func forgetUserToken() {
         token = ""
-    }
+        let storrage = SecureStorage.shared
+        try? storrage.deleteValue(for: .userTokenDrobbble)
+    }   
     
     func getCurrentUser(completion: @escaping GetDribbbleUserCompletion) {
         guard let token = token

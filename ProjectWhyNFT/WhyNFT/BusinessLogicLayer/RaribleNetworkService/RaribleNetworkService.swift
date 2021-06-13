@@ -55,6 +55,8 @@ extension RaribleNetworkService: RaribleNetworkServiceProtocol {
     
     func forgetUserId() {
         userId = nil
+        let storrage = SecureStorage.shared
+        try? storrage.deleteValue(for: .userIdRarible)
     }
     
     func workSaleRequest(artWork: ArtWork, completion: @escaping WorkRequestCompletion) {

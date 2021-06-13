@@ -1,4 +1,3 @@
-
 //  RaribleRoutes.swift
 //  WhyNFT
 //
@@ -9,7 +8,7 @@ import Alamofire
 
 enum RaribleRoutes: String, URLConvertible {
     
-    static let endpoint = "https://78f3ff456306.ngrok.io/api/"
+    static let endpoint = "http://188.225.39.228:8015/api/"
     
     case work = "work"
 
