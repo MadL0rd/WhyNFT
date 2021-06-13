@@ -83,6 +83,24 @@
 		8965F1052675AE0D00454B69 /* PortfolioAuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8965F0FD2675AE0C00454B69 /* PortfolioAuthenticationViewController.swift */; };
 		8965F1062675AE0D00454B69 /* PortfolioAuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8965F0FE2675AE0C00454B69 /* PortfolioAuthenticationView.swift */; };
 		8965F1072675AE0D00454B69 /* PortfolioAuthenticationInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8965F0FF2675AE0C00454B69 /* PortfolioAuthenticationInput.swift */; };
+		8965F1152675C21700454B69 /* SettingsViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8965F10A2675C21700454B69 /* SettingsViewModelProtocol.swift */; };
+		8965F1162675C21700454B69 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8965F10B2675C21700454B69 /* SettingsViewModel.swift */; };
+		8965F1172675C21700454B69 /* SettingsCoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8965F10D2675C21700454B69 /* SettingsCoordinatorProtocol.swift */; };
+		8965F1182675C21700454B69 /* SettingsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8965F10E2675C21700454B69 /* SettingsCoordinator.swift */; };
+		8965F1192675C21700454B69 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8965F1102675C21700454B69 /* SettingsView.swift */; };
+		8965F11A2675C21700454B69 /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8965F1112675C21700454B69 /* SettingsTableViewCell.swift */; };
+		8965F11B2675C21700454B69 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8965F1122675C21700454B69 /* SettingsViewController.swift */; };
+		8965F11C2675C21700454B69 /* SettingsOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8965F1132675C21700454B69 /* SettingsOutput.swift */; };
+		8965F11D2675C21700454B69 /* SettingsInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8965F1142675C21700454B69 /* SettingsInput.swift */; };
+		8965F1212675C5A600454B69 /* Array+isNotEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8965F1202675C5A600454B69 /* Array+isNotEmpty.swift */; };
+		8965F1302675CC4300454B69 /* AboutUsViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8965F1262675CC4300454B69 /* AboutUsViewModelProtocol.swift */; };
+		8965F1312675CC4300454B69 /* AboutUsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8965F1272675CC4300454B69 /* AboutUsViewModel.swift */; };
+		8965F1322675CC4300454B69 /* AboutUsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8965F1292675CC4300454B69 /* AboutUsCoordinator.swift */; };
+		8965F1332675CC4300454B69 /* AboutUsCoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8965F12A2675CC4300454B69 /* AboutUsCoordinatorProtocol.swift */; };
+		8965F1342675CC4300454B69 /* AboutUsOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8965F12B2675CC4300454B69 /* AboutUsOutput.swift */; };
+		8965F1352675CC4300454B69 /* AboutUsInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8965F12C2675CC4300454B69 /* AboutUsInput.swift */; };
+		8965F1362675CC4300454B69 /* AboutUsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8965F12E2675CC4300454B69 /* AboutUsView.swift */; };
+		8965F1372675CC4300454B69 /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8965F12F2675CC4300454B69 /* AboutUsViewController.swift */; };
 		8978162E2674B2C500710B13 /* MKMEGADRIVE.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8978162D2674B2C500710B13 /* MKMEGADRIVE.ttf */; };
 		897816302674B38900710B13 /* Alata-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8978162F2674B33F00710B13 /* Alata-Regular.ttf */; };
 		897816482674C6BD00710B13 /* UIColor+resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897816472674C6BD00710B13 /* UIColor+resources.swift */; };
@@ -123,14 +141,6 @@
 		89F00AB42542E16200D482F6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F00A532542E16200D482F6 /* SceneDelegate.swift */; };
 		89F2759B26750534005DFA9F /* TabBarModuleTransitionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F2759A26750534005DFA9F /* TabBarModuleTransitionHandler.swift */; };
 		89F2759D2675056A005DFA9F /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F2759C2675056A005DFA9F /* CustomTabBar.swift */; };
-		89F275C826750A1E005DFA9F /* SettingsViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F275A626750A1E005DFA9F /* SettingsViewModelProtocol.swift */; };
-		89F275C926750A1E005DFA9F /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F275A726750A1E005DFA9F /* SettingsViewModel.swift */; };
-		89F275CA26750A1E005DFA9F /* SettingsCoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F275A926750A1E005DFA9F /* SettingsCoordinatorProtocol.swift */; };
-		89F275CB26750A1E005DFA9F /* SettingsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F275AA26750A1E005DFA9F /* SettingsCoordinator.swift */; };
-		89F275CC26750A1E005DFA9F /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F275AC26750A1E005DFA9F /* SettingsView.swift */; };
-		89F275CD26750A1E005DFA9F /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F275AD26750A1E005DFA9F /* SettingsViewController.swift */; };
-		89F275CE26750A1E005DFA9F /* SettingsOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F275AE26750A1E005DFA9F /* SettingsOutput.swift */; };
-		89F275CF26750A1E005DFA9F /* SettingsInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F275AF26750A1E005DFA9F /* SettingsInput.swift */; };
 		89F275D026750A1E005DFA9F /* WorksViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F275B226750A1E005DFA9F /* WorksViewModelProtocol.swift */; };
 		89F275D126750A1E005DFA9F /* WorksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F275B326750A1E005DFA9F /* WorksViewModel.swift */; };
 		89F275D226750A1E005DFA9F /* WorksCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F275B526750A1E005DFA9F /* WorksCoordinator.swift */; };
@@ -247,6 +257,24 @@
 		8965F0FD2675AE0C00454B69 /* PortfolioAuthenticationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortfolioAuthenticationViewController.swift; sourceTree = "<group>"; };
 		8965F0FE2675AE0C00454B69 /* PortfolioAuthenticationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortfolioAuthenticationView.swift; sourceTree = "<group>"; };
 		8965F0FF2675AE0C00454B69 /* PortfolioAuthenticationInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortfolioAuthenticationInput.swift; sourceTree = "<group>"; };
+		8965F10A2675C21700454B69 /* SettingsViewModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewModelProtocol.swift; sourceTree = "<group>"; };
+		8965F10B2675C21700454B69 /* SettingsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		8965F10D2675C21700454B69 /* SettingsCoordinatorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsCoordinatorProtocol.swift; sourceTree = "<group>"; };
+		8965F10E2675C21700454B69 /* SettingsCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsCoordinator.swift; sourceTree = "<group>"; };
+		8965F1102675C21700454B69 /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		8965F1112675C21700454B69 /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
+		8965F1122675C21700454B69 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		8965F1132675C21700454B69 /* SettingsOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsOutput.swift; sourceTree = "<group>"; };
+		8965F1142675C21700454B69 /* SettingsInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsInput.swift; sourceTree = "<group>"; };
+		8965F1202675C5A600454B69 /* Array+isNotEmpty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+isNotEmpty.swift"; sourceTree = "<group>"; };
+		8965F1262675CC4300454B69 /* AboutUsViewModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutUsViewModelProtocol.swift; sourceTree = "<group>"; };
+		8965F1272675CC4300454B69 /* AboutUsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutUsViewModel.swift; sourceTree = "<group>"; };
+		8965F1292675CC4300454B69 /* AboutUsCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutUsCoordinator.swift; sourceTree = "<group>"; };
+		8965F12A2675CC4300454B69 /* AboutUsCoordinatorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutUsCoordinatorProtocol.swift; sourceTree = "<group>"; };
+		8965F12B2675CC4300454B69 /* AboutUsOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutUsOutput.swift; sourceTree = "<group>"; };
+		8965F12C2675CC4300454B69 /* AboutUsInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutUsInput.swift; sourceTree = "<group>"; };
+		8965F12E2675CC4300454B69 /* AboutUsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutUsView.swift; sourceTree = "<group>"; };
+		8965F12F2675CC4300454B69 /* AboutUsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
 		8978162D2674B2C500710B13 /* MKMEGADRIVE.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MKMEGADRIVE.ttf; sourceTree = "<group>"; };
 		8978162F2674B33F00710B13 /* Alata-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Alata-Regular.ttf"; sourceTree = "<group>"; };
 		897816472674C6BD00710B13 /* UIColor+resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+resources.swift"; sourceTree = "<group>"; };
@@ -287,14 +315,6 @@
 		89F00A532542E16200D482F6 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		89F2759A26750534005DFA9F /* TabBarModuleTransitionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarModuleTransitionHandler.swift; sourceTree = "<group>"; };
 		89F2759C2675056A005DFA9F /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
-		89F275A626750A1E005DFA9F /* SettingsViewModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewModelProtocol.swift; sourceTree = "<group>"; };
-		89F275A726750A1E005DFA9F /* SettingsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
-		89F275A926750A1E005DFA9F /* SettingsCoordinatorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsCoordinatorProtocol.swift; sourceTree = "<group>"; };
-		89F275AA26750A1E005DFA9F /* SettingsCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsCoordinator.swift; sourceTree = "<group>"; };
-		89F275AC26750A1E005DFA9F /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
-		89F275AD26750A1E005DFA9F /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		89F275AE26750A1E005DFA9F /* SettingsOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsOutput.swift; sourceTree = "<group>"; };
-		89F275AF26750A1E005DFA9F /* SettingsInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsInput.swift; sourceTree = "<group>"; };
 		89F275B226750A1E005DFA9F /* WorksViewModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorksViewModelProtocol.swift; sourceTree = "<group>"; };
 		89F275B326750A1E005DFA9F /* WorksViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorksViewModel.swift; sourceTree = "<group>"; };
 		89F275B526750A1E005DFA9F /* WorksCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorksCoordinator.swift; sourceTree = "<group>"; };
@@ -420,6 +440,7 @@
 				892B1F9C261D2EA200329B0A /* Bundle+info.swift */,
 				892B1F9D261D2EA200329B0A /* Array+safeIndex.swift */,
 				892B1F9E261D2EA200329B0A /* String+capitalizingFirstLetter.swift */,
+				8965F1202675C5A600454B69 /* Array+isNotEmpty.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -682,6 +703,85 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		8965F1082675C21700454B69 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				8965F1132675C21700454B69 /* SettingsOutput.swift */,
+				8965F1142675C21700454B69 /* SettingsInput.swift */,
+				8965F10C2675C21700454B69 /* Coordinator */,
+				8965F1092675C21700454B69 /* ViewModel */,
+				8965F10F2675C21700454B69 /* View */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		8965F1092675C21700454B69 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8965F10A2675C21700454B69 /* SettingsViewModelProtocol.swift */,
+				8965F10B2675C21700454B69 /* SettingsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8965F10C2675C21700454B69 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				8965F10D2675C21700454B69 /* SettingsCoordinatorProtocol.swift */,
+				8965F10E2675C21700454B69 /* SettingsCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		8965F10F2675C21700454B69 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8965F1122675C21700454B69 /* SettingsViewController.swift */,
+				8965F1102675C21700454B69 /* SettingsView.swift */,
+				8965F1112675C21700454B69 /* SettingsTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8965F1242675CC4300454B69 /* AboutUs */ = {
+			isa = PBXGroup;
+			children = (
+				8965F12B2675CC4300454B69 /* AboutUsOutput.swift */,
+				8965F12C2675CC4300454B69 /* AboutUsInput.swift */,
+				8965F1252675CC4300454B69 /* ViewModel */,
+				8965F1282675CC4300454B69 /* Coordinator */,
+				8965F12D2675CC4300454B69 /* View */,
+			);
+			path = AboutUs;
+			sourceTree = "<group>";
+		};
+		8965F1252675CC4300454B69 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8965F1262675CC4300454B69 /* AboutUsViewModelProtocol.swift */,
+				8965F1272675CC4300454B69 /* AboutUsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8965F1282675CC4300454B69 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				8965F1292675CC4300454B69 /* AboutUsCoordinator.swift */,
+				8965F12A2675CC4300454B69 /* AboutUsCoordinatorProtocol.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		8965F12D2675CC4300454B69 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8965F12F2675CC4300454B69 /* AboutUsViewController.swift */,
+				8965F12E2675CC4300454B69 /* AboutUsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		8978164B2674C93200710B13 /* DribbbleNetworkService */ = {
 			isa = PBXGroup;
 			children = (
@@ -863,48 +963,10 @@
 				8978166B2674EE1D00710B13 /* MainMenu */,
 				89F275BC26750A1E005DFA9F /* SalesHistory */,
 				89F275B026750A1E005DFA9F /* Works */,
-				89F275A426750A1E005DFA9F /* Settings */,
+				8965F1082675C21700454B69 /* Settings */,
+				8965F1242675CC4300454B69 /* AboutUs */,
 			);
 			path = UserStories;
-			sourceTree = "<group>";
-		};
-		89F275A426750A1E005DFA9F /* Settings */ = {
-			isa = PBXGroup;
-			children = (
-				89F275AF26750A1E005DFA9F /* SettingsInput.swift */,
-				89F275AE26750A1E005DFA9F /* SettingsOutput.swift */,
-				89F275A526750A1E005DFA9F /* ViewModel */,
-				89F275A826750A1E005DFA9F /* Coordinator */,
-				89F275AB26750A1E005DFA9F /* View */,
-			);
-			path = Settings;
-			sourceTree = "<group>";
-		};
-		89F275A526750A1E005DFA9F /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				89F275A626750A1E005DFA9F /* SettingsViewModelProtocol.swift */,
-				89F275A726750A1E005DFA9F /* SettingsViewModel.swift */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		89F275A826750A1E005DFA9F /* Coordinator */ = {
-			isa = PBXGroup;
-			children = (
-				89F275A926750A1E005DFA9F /* SettingsCoordinatorProtocol.swift */,
-				89F275AA26750A1E005DFA9F /* SettingsCoordinator.swift */,
-			);
-			path = Coordinator;
-			sourceTree = "<group>";
-		};
-		89F275AB26750A1E005DFA9F /* View */ = {
-			isa = PBXGroup;
-			children = (
-				89F275AD26750A1E005DFA9F /* SettingsViewController.swift */,
-				89F275AC26750A1E005DFA9F /* SettingsView.swift */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		89F275B026750A1E005DFA9F /* Works */ = {
@@ -1235,17 +1297,18 @@
 			files = (
 				894064EF2612308800DC682F /* AnnouncementViewController.swift in Sources */,
 				894064E02612308800DC682F /* UIViewController+addChildViewControllerToView.swift in Sources */,
+				8965F1322675CC4300454B69 /* AboutUsCoordinator.swift in Sources */,
 				897816582674C93200710B13 /* DribbbleRequestResults.swift in Sources */,
 				899AAFDB2656AC460066CA10 /* VibroGenerator.swift in Sources */,
 				89F275D326750A1E005DFA9F /* WorksCoordinatorProtocol.swift in Sources */,
 				8965F0E22675550D00454B69 /* DribbbbleWork.swift in Sources */,
+				8965F11C2675C21700454B69 /* SettingsOutput.swift in Sources */,
+				8965F1372675CC4300454B69 /* AboutUsViewController.swift in Sources */,
 				894064F12612308800DC682F /* SegmentedControl.swift in Sources */,
 				8940652A2612327C00DC682F /* LoadingViewModel.swift in Sources */,
 				8965F1012675AE0D00454B69 /* PortfolioAuthenticationViewModel.swift in Sources */,
 				894064F32612308800DC682F /* ArrowDownButton.swift in Sources */,
 				89F2759B26750534005DFA9F /* TabBarModuleTransitionHandler.swift in Sources */,
-				89F275C926750A1E005DFA9F /* SettingsViewModel.swift in Sources */,
-				89F275CB26750A1E005DFA9F /* SettingsCoordinator.swift in Sources */,
 				897816622674E36C00710B13 /* SettingsStoring.swift in Sources */,
 				894064DA2612308800DC682F /* PickerViewManager.swift in Sources */,
 				8978167B2674EE1D00710B13 /* MainMenuInput.swift in Sources */,
@@ -1258,11 +1321,12 @@
 				892B1FA3261D2EA200329B0A /* Array+safeIndex.swift in Sources */,
 				89F00AB22542E16200D482F6 /* ApplicationAssembly.swift in Sources */,
 				894064E32612308800DC682F /* UIImage+overlayedColor.swift in Sources */,
+				8965F1172675C21700454B69 /* SettingsCoordinatorProtocol.swift in Sources */,
+				8965F1162675C21700454B69 /* SettingsViewModel.swift in Sources */,
 				8965F0E726756C2600454B69 /* LightSelectionCollectionView.swift in Sources */,
 				8940652B2612327C00DC682F /* LoadingOutput.swift in Sources */,
 				897816592674C93200710B13 /* DribbbleCompletionTypealiases.swift in Sources */,
 				89DD264B25DC9F0000AD2868 /* R.generated.swift in Sources */,
-				89F275C826750A1E005DFA9F /* SettingsViewModelProtocol.swift in Sources */,
 				8940652F2612327C00DC682F /* LoadingViewController.swift in Sources */,
 				894064DB2612308800DC682F /* UIView+TapAnimation.swift in Sources */,
 				897816792674EE1D00710B13 /* MainMenuCoordinator.swift in Sources */,
@@ -1272,58 +1336,66 @@
 				89F00AB42542E16200D482F6 /* SceneDelegate.swift in Sources */,
 				892B1FA2261D2EA200329B0A /* Bundle+info.swift in Sources */,
 				89F275DD26750A1E005DFA9F /* SalesHistoryView.swift in Sources */,
+				8965F1362675CC4300454B69 /* AboutUsView.swift in Sources */,
 				8965F0F1267595F100454B69 /* LightSelectionCollectionViewDelegate.swift in Sources */,
 				894064F22612308800DC682F /* ScrollMovingUpManagerForUIControl.swift in Sources */,
 				894064D82612308800DC682F /* AlertManager.swift in Sources */,
 				8940645126122B7600DC682F /* CustomPatchEncoding.swift in Sources */,
 				894B1EBE26751AAB00EF8277 /* LabelMixedFont.swift in Sources */,
 				894064DF2612308800DC682F /* UIImageView+setDefaultLoadingInicator.swift in Sources */,
+				8965F1212675C5A600454B69 /* Array+isNotEmpty.swift in Sources */,
 				89F275D926750A1E005DFA9F /* SalesHistoryViewModelProtocol.swift in Sources */,
 				897816632674E36C00710B13 /* SecureStorage.swift in Sources */,
 				8965F1072675AE0D00454B69 /* PortfolioAuthenticationInput.swift in Sources */,
-				89F275CC26750A1E005DFA9F /* SettingsView.swift in Sources */,
 				89F275DB26750A1E005DFA9F /* SalesHistoryCoordinatorProtocol.swift in Sources */,
+				8965F1302675CC4300454B69 /* AboutUsViewModelProtocol.swift in Sources */,
 				897FC3D9261690DC002352E7 /* UIViewController+alert.swift in Sources */,
 				8965F1022675AE0D00454B69 /* PortfolioAuthenticationCoordinator.swift in Sources */,
 				894064EE2612308800DC682F /* PaddingLabel.swift in Sources */,
 				8978167D2674EE1D00710B13 /* MainMenuViewController.swift in Sources */,
 				89F275DE26750A1E005DFA9F /* SalesHistoryViewController.swift in Sources */,
-				89F275CF26750A1E005DFA9F /* SettingsInput.swift in Sources */,
-				89F275CA26750A1E005DFA9F /* SettingsCoordinatorProtocol.swift in Sources */,
+				8965F1312675CC4300454B69 /* AboutUsViewModel.swift in Sources */,
 				8981FD822656EC5600993B65 /* AlertPresentationView.swift in Sources */,
 				89F275D826750A1E005DFA9F /* SalesHistoryViewModel.swift in Sources */,
 				8965F1002675AE0D00454B69 /* PortfolioAuthenticationViewModelProtocol.swift in Sources */,
 				8981FD802656EBF000993B65 /* AlertPresentationViewController.swift in Sources */,
+				8965F11B2675C21700454B69 /* SettingsViewController.swift in Sources */,
 				8940652C2612327C00DC682F /* LoadingCoordinator.swift in Sources */,
 				894064F52612308800DC682F /* TouchClearUIComponents.swift in Sources */,
 				894064E22612308800DC682F /* String+SizeCalculator.swift in Sources */,
 				892B1FA4261D2EA200329B0A /* String+capitalizingFirstLetter.swift in Sources */,
 				8940645626122B7600DC682F /* DataRequestExecutable.swift in Sources */,
+				8965F1332675CC4300454B69 /* AboutUsCoordinatorProtocol.swift in Sources */,
 				894064E82612308800DC682F /* UITextField+placeholderPadding.swift in Sources */,
 				8965F1032675AE0D00454B69 /* PortfolioAuthenticationCoordinatorProtocol.swift in Sources */,
 				89E608662658897C00E6707C /* Contacts.swift in Sources */,
+				8965F11D2675C21700454B69 /* SettingsInput.swift in Sources */,
 				89F275D426750A1E005DFA9F /* WorksInput.swift in Sources */,
 				89F275D126750A1E005DFA9F /* WorksViewModel.swift in Sources */,
 				89F275D226750A1E005DFA9F /* WorksCoordinator.swift in Sources */,
 				897816682674E8A400710B13 /* DribbbleUser.swift in Sources */,
 				897816662674E36C00710B13 /* KeychainStorageError.swift in Sources */,
 				8940645526122B7600DC682F /* NetworkErrors.swift in Sources */,
+				8965F1352675CC4300454B69 /* AboutUsInput.swift in Sources */,
 				894064ED2612308800DC682F /* LimitatableTextView.swift in Sources */,
 				89F275D026750A1E005DFA9F /* WorksViewModelProtocol.swift in Sources */,
 				894064D92612308800DC682F /* ColorPickerView.swift in Sources */,
 				8965F0EF26757CAC00454B69 /* DoubleTitledView.swift in Sources */,
 				8940645226122B7600DC682F /* CustomArrayEncoding.swift in Sources */,
 				89F275D526750A1E005DFA9F /* WorksOutput.swift in Sources */,
+				8965F11A2675C21700454B69 /* SettingsTableViewCell.swift in Sources */,
 				89F00AB12542E16200D482F6 /* MainAppRouter.swift in Sources */,
-				89F275CD26750A1E005DFA9F /* SettingsViewController.swift in Sources */,
+				8965F1192675C21700454B69 /* SettingsView.swift in Sources */,
 				89F2759D2675056A005DFA9F /* CustomTabBar.swift in Sources */,
 				894064DC2612308800DC682F /* UIView+layerAnimation.swift in Sources */,
 				894064E52612308800DC682F /* UIView+shake.swift in Sources */,
+				8965F1182675C21700454B69 /* SettingsCoordinator.swift in Sources */,
 				89F275D626750A1E005DFA9F /* WorksViewController.swift in Sources */,
 				8940645426122B7600DC682F /* NetworkService.swift in Sources */,
 				897816652674E36C00710B13 /* StorageItemKey.swift in Sources */,
 				8940645326122B7600DC682F /* DataParser.swift in Sources */,
 				894064E62612308800DC682F /* UIColor+rgba.swift in Sources */,
+				8965F1152675C21700454B69 /* SettingsViewModelProtocol.swift in Sources */,
 				894065302612327C00DC682F /* LoadingInput.swift in Sources */,
 				894064EB2612308800DC682F /* UIViewController+ModuleTransitionHandler.swift in Sources */,
 				897816772674EE1D00710B13 /* MainMenuViewModelProtocol.swift in Sources */,
@@ -1334,7 +1406,6 @@
 				894064F02612308800DC682F /* LabelsSegmentedControl.swift in Sources */,
 				894064F62612308800DC682F /* ButtonWithTouchSize.swift in Sources */,
 				89E608672658897C00E6707C /* LocalOnlyConstants.swift in Sources */,
-				89F275CE26750A1E005DFA9F /* SettingsOutput.swift in Sources */,
 				892B1FA0261D2EA200329B0A /* UserDefaults+color.swift in Sources */,
 				894065292612327C00DC682F /* LoadingViewModelProtocol.swift in Sources */,
 				897816642674E36C00710B13 /* UserDefaultsStorage.swift in Sources */,
@@ -1357,6 +1428,7 @@
 				8965F1042675AE0D00454B69 /* PortfolioAuthenticationOutput.swift in Sources */,
 				894064EC2612308800DC682F /* DefaultCoordinator.swift in Sources */,
 				892B1FA1261D2EA200329B0A /* Array+weakObjects.swift in Sources */,
+				8965F1342675CC4300454B69 /* AboutUsOutput.swift in Sources */,
 				89F275DA26750A1E005DFA9F /* SalesHistoryCoordinator.swift in Sources */,
 				894064EA2612308800DC682F /* ModuleTransitionHandler.swift in Sources */,
 				8940645726122B7600DC682F /* CompletionTypealiasesDefault.swift in Sources */,

@@ -1,5 +1,5 @@
 //
-//  PortfolioAuthenticationView.swift
+//  AboutUsView.swift
 //  WhyNFT
 //
 //  Created by Антон Текутов on 13.06.2021.
@@ -7,12 +7,10 @@
 
 import UIKit
 
-final class PortfolioAuthenticationView: UIView {
+final class AboutUsView: UIView {
     
     let titleBackground = UIView()
     let titlesView = DoubleTitledView()
-    
-    let itemsCollection = LightSelectionCollectionView()
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -29,13 +27,8 @@ final class PortfolioAuthenticationView: UIView {
     // MARK: - Private methods
     
     private func setupView() {
-        
         backgroundColor = .res.background()
-        
-        addSubview(itemsCollection)
-        itemsCollection.translatesAutoresizingMaskIntoConstraints = false
-        itemsCollection.selectedViewIsHidden = true
-        
+
         addSubview(titleBackground)
         titleBackground.translatesAutoresizingMaskIntoConstraints = false
         titleBackground.backgroundColor = .res.background()
@@ -43,27 +36,22 @@ final class PortfolioAuthenticationView: UIView {
         
         addSubview(titlesView)
         titlesView.translatesAutoresizingMaskIntoConstraints = false
-        titlesView.setTitles(title: R.string.localizable.portfolioAuthenticationTitle(),
-                             subtitle: R.string.localizable.portfolioAuthenticationSubtitle())
+        titlesView.setTitles(title: R.string.localizable.aboutUsTitle(),
+                             subtitle: nil)
 
         makeConstraints()
     }
 
     private func makeConstraints() {
         NSLayoutConstraint.activate([
-            titlesView.topAnchor.constraint(equalTo: topAnchor, constant: UIConstants.statusBarHeight + 24),
+            titlesView.topAnchor.constraint(equalTo: topAnchor, constant: UIConstants.navigationBarHeight + 24),
             titlesView.widthAnchor.constraint(equalTo: widthAnchor, constant: -48),
             titlesView.centerXAnchor.constraint(equalTo: centerXAnchor),
             
             titleBackground.topAnchor.constraint(equalTo: topAnchor),
             titleBackground.leftAnchor.constraint(equalTo: leftAnchor),
             titleBackground.rightAnchor.constraint(equalTo: rightAnchor),
-            titleBackground.bottomAnchor.constraint(equalTo: titlesView.bottomAnchor, constant: 24),
-            
-            itemsCollection.topAnchor.constraint(equalTo: titleBackground.bottomAnchor, constant: -80),
-            itemsCollection.leftAnchor.constraint(equalTo: leftAnchor),
-            itemsCollection.rightAnchor.constraint(equalTo: rightAnchor),
-            itemsCollection.bottomAnchor.constraint(equalTo: bottomAnchor)
+            titleBackground.bottomAnchor.constraint(equalTo: titlesView.bottomAnchor, constant: 24)
         ])
     }
 }

@@ -1,6 +1,6 @@
 //
 //  Contacts.swift
-//  MacroCosm
+//  WhyNFT
 //
 //  Created by Anton Tekutov on 12.06.21.
 //

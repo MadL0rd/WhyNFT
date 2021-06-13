@@ -259,8 +259,7 @@ class LightSelectionCollectionView: UIView {
         collectionViewLayout.minimumInteritemSpacing = cellSpacing
         collectionViewLayout.scrollDirection = .vertical
         collectionViewLayout.itemSize = CGSize(width: cellWidth, height: cellHeight)
-        collectionView.scrollIndicatorInsets = UIEdgeInsets(top: 70, left: 5, bottom: UIConstants.customTabBarHeight, right: 0)
-        collectionView.contentInset = UIEdgeInsets(top: 100,
+        collectionView.contentInset = UIEdgeInsets(top: UIConstants.navigationBarHeight + 32,
                                                    left: sideMargin,
                                                    bottom: UIConstants.customTabBarHeight,
                                                    right: sideMargin)

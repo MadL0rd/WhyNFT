@@ -36,3 +36,17 @@
 "addNewItem" = "Add new item";
 "addNewItemSubtitle" = "Choose shot from your Dribbble";
 "worksTooltipOpenInBrowser" = "Open work page in browser";
+
+// Settings
+"settingsTitle" = "Settings";
+"settingsSupport" = "Support";
+"settingsRateApp" = "Rate the app";
+"settingsAboutUs" = "About us";
+"settingsUserAgreement" = "User Agreement";
+"settingsPrivacyPolicy" = "Privacy Policy";
+"settingsDiscollectDribbble" = "Disconnect from dribbble";
+"settingsLogOutFromWallet" = "Log out from wallet";
+"settingsVersion" = "Version";
+
+// About us
+"aboutUsTitle" = "About us";

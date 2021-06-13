@@ -23,7 +23,7 @@ final class WorksViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        _view.resetMixedFontLabelsText()
+        _view.titlesView.refreshMixedFontText()
         
         navigationController?.navigationBar.barStyle = .black
         navigationController?.navigationBar.tintColor = R.color.tintMain()
@@ -59,6 +59,8 @@ final class WorksViewController: UIViewController {
     // MARK: - UI elements actions
     
     @objc func handleRefreshControl() {
+        _view.itemsCollection.selectionBorderedView.alpha = 0
+        _view.itemsCollection.currentSelectedIndexPath = nil
         viewModel.reloadArtWorks { [ weak self ] in
             self?._view.itemsCollection.reloadData()
             self?._view.refreshControl.endRefreshing()

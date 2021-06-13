@@ -26,10 +26,6 @@ final class WorksView: UIView {
         
         setupView()
     }
-    
-    func resetMixedFontLabelsText() {
-        titlesView.titleLabel.setMixedFontText(R.string.localizable.addNewItem())
-    }
 
     // MARK: - Private methods
     
@@ -50,10 +46,9 @@ final class WorksView: UIView {
         
         addSubview(titlesView)
         titlesView.translatesAutoresizingMaskIntoConstraints = false
-        titlesView.subtitleLabel.text = R.string.localizable.addNewItemSubtitle()
-        
-        resetMixedFontLabelsText()
-        
+        titlesView.setTitles(title: R.string.localizable.addNewItem(),
+                             subtitle: R.string.localizable.addNewItemSubtitle())
+                
         makeConstraints()
     }
 

@@ -57,9 +57,7 @@ class LabelMixedFont: UILabel {
     
     // MARK: - Private setup methods
     
-    private func setupView() {
-        availableSigns += availableSigns.uppercased()
-        
+    private func setupView() {        
         textColor = R.color.tintMain()
         font = R.font.alataRegular(size: 36)
         numberOfLines = 0

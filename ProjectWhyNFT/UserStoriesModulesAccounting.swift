@@ -11,6 +11,7 @@ protocol ModuleGenerator {
 enum UserStoriesModulesDefault: ModuleGenerator {
 
     case settings
+    case aboutUs
     case loading
     case works
     case mainMenu
@@ -21,6 +22,8 @@ enum UserStoriesModulesDefault: ModuleGenerator {
         switch self {
         case .settings: 
             return SettingsCoordinator.createModule()
+        case .aboutUs: 
+            return AboutUsCoordinator.createModule()
         case .loading: 
             return LoadingCoordinator.createModule()
         case .works: 
@@ -38,6 +41,7 @@ enum UserStoriesModulesDefault: ModuleGenerator {
 enum UserStoriesModulesWithOutput: ModuleGenerator {
 
     case settings(output: SettingsOutput)
+    case aboutUs(output: AboutUsOutput)
     case loading(output: LoadingOutput)
     case works(output: WorksOutput)
     case mainMenu(output: MainMenuOutput)
@@ -48,6 +52,11 @@ enum UserStoriesModulesWithOutput: ModuleGenerator {
         switch self {
         case .settings(let output): 
             return SettingsCoordinator.createModule { viewModel in 
+                viewModel.output = output
+            }
+            
+        case .aboutUs(let output): 
+            return AboutUsCoordinator.createModule { viewModel in 
                 viewModel.output = output
             }
             

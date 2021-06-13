@@ -25,9 +25,17 @@ class DoubleTitledView: UIView {
     
     // MARK: - Public methods
     
-    func setTitles(title: String, subtitle: String) {
+    func setTitles(title: String, subtitle: String?) {
         titleLabel.setMixedFontText(title)
         subtitleLabel.text = subtitle
+        
+        subtitleLabel.isHidden = subtitleLabel.text?.isEmpty ?? true
+    }
+    
+    func refreshMixedFontText() {
+        guard let text = titleLabel.text
+        else { return }
+        titleLabel.setMixedFontText(text)
     }
     
     // MARK: - Private setup methods
