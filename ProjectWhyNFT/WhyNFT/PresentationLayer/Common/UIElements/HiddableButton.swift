@@ -56,9 +56,10 @@ class HiddableButton: UIView {
         translatesAutoresizingMaskIntoConstraints = false
         layer.masksToBounds = true
         
-        addSubview(backgroundImage)
-        backgroundImage.translatesAutoresizingMaskIntoConstraints = false
-        backgroundImage.contentMode = .scaleToFill
+//        addSubview(backgroundImage)
+//        backgroundImage.translatesAutoresizingMaskIntoConstraints = false
+//        backgroundImage.contentMode = .scaleToFill
+//        backgroundImage.isHidden = true
         
         addSubview(button)
         UIStyleManager.buttonDefault(button)
@@ -75,12 +76,12 @@ class HiddableButton: UIView {
             
             button.bottomAnchor.constraint(equalTo: bottomAnchor),
             button.centerXAnchor.constraint(equalTo: centerXAnchor),
-            button.widthAnchor.constraint(equalTo: widthAnchor, constant: -48),
+            button.widthAnchor.constraint(equalTo: widthAnchor, constant: -48)
             
-            backgroundImage.heightAnchor.constraint(equalToConstant: 80),
-            backgroundImage.bottomAnchor.constraint(equalTo: bottomAnchor),
-            backgroundImage.centerXAnchor.constraint(equalTo: centerXAnchor),
-            backgroundImage.widthAnchor.constraint(equalTo: widthAnchor)
+//            backgroundImage.heightAnchor.constraint(equalToConstant: 80),
+//            backgroundImage.bottomAnchor.constraint(equalTo: bottomAnchor),
+//            backgroundImage.centerXAnchor.constraint(equalTo: centerXAnchor),
+//            backgroundImage.widthAnchor.constraint(equalTo: widthAnchor)
         ])
     }
 }

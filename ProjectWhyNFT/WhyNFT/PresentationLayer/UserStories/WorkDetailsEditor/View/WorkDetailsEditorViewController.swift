@@ -19,6 +19,8 @@ final class WorkDetailsEditorViewController: UIViewController {
     override func loadView() {
         self.view = WorkDetailsEditorView()
     }
+    
+    var urlText = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +29,8 @@ final class WorkDetailsEditorViewController: UIViewController {
     }
 
     private func configureSelf() {
+        _view.linkButton.addTarget(self, action: #selector(linkButton(sender:)), for: .touchUpInside)
+        
         let loadingHUD = AlertManager.getLoadingHUD(on: view)
         loadingHUD.show(in: view)
         
@@ -38,7 +42,11 @@ final class WorkDetailsEditorViewController: UIViewController {
             switch result {
             case .success(let data):
                 AlertManager.showSuccessHUD(on: self._view)
+                self.urlText = data.result
                 self._view.titlesView.subtitleLabel.text = data.result
+                UIView.animate(withDuration: 0.3) { [ weak self ] in
+                    self?._view.linkButton.alpha = 1
+                }
 
             case .failure(let error):
                 AlertManager.showErrorHUD(on: self._view)
@@ -47,5 +55,12 @@ final class WorkDetailsEditorViewController: UIViewController {
             }
             
         }
+    }
+    
+    @objc private func linkButton(sender: UIButton) {
+        guard let url = URL(string: urlText)
+        else { return }
+        sender.tapAnimation()
+        UIApplication.shared.open(url)
     }
 }

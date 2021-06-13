@@ -11,6 +11,8 @@ final class WorkDetailsEditorView: UIView {
     
     let titleBackground = UIView()
     let titlesView = DoubleTitledView()
+    
+    let linkButton = ButtonWithTouchSize()
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -38,6 +40,16 @@ final class WorkDetailsEditorView: UIView {
         titlesView.translatesAutoresizingMaskIntoConstraints = false
         titlesView.setTitles(title: R.string.localizable.workDetailsEditorTitle(),
                              subtitle: R.string.localizable.workDetailsEditorSubtitle())
+        
+        addSubview(linkButton)
+        linkButton.translatesAutoresizingMaskIntoConstraints = false
+        UIStyleManager.buttonDefault(linkButton)
+        linkButton.backgroundColor = .res.backgroundInput()
+        linkButton.setTitleColor(.res.tintMain(), for: .normal)
+        linkButton.setTitleColor(.res.tintMain(), for: .selected)
+        linkButton.setTitleColor(.res.tintMain(), for: .highlighted)
+        linkButton.setTitle("Open link", for: .normal)
+        linkButton.alpha = 0
 
         makeConstraints()
     }
@@ -51,7 +63,11 @@ final class WorkDetailsEditorView: UIView {
             titleBackground.topAnchor.constraint(equalTo: topAnchor),
             titleBackground.leftAnchor.constraint(equalTo: leftAnchor),
             titleBackground.rightAnchor.constraint(equalTo: rightAnchor),
-            titleBackground.bottomAnchor.constraint(equalTo: titlesView.bottomAnchor, constant: 24)
+            titleBackground.bottomAnchor.constraint(equalTo: titlesView.bottomAnchor, constant: 24),
+            
+            linkButton.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor, constant: -32),
+            linkButton.widthAnchor.constraint(equalTo: widthAnchor, constant: -48),
+            linkButton.centerXAnchor.constraint(equalTo: centerXAnchor)
         ])
     }
 }
