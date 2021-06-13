@@ -39,6 +39,7 @@ final class WorksViewController: UIViewController {
     private func configureSelf() {
         _view.itemsCollection.delegate = self
         _view.refreshControl.addTarget(self, action: #selector(handleRefreshControl), for: .valueChanged)
+        _view.selectButton.addTarget(self, action: #selector(selectWorkToSale(sender:)), for: .touchUpInside)
         
         loadNextPageIfNeeded()
     }
@@ -61,10 +62,22 @@ final class WorksViewController: UIViewController {
     @objc func handleRefreshControl() {
         _view.itemsCollection.selectionBorderedView.alpha = 0
         _view.itemsCollection.currentSelectedIndexPath = nil
+        _view.hiddableButton.manageVisibility(hidden: false)
         viewModel.reloadArtWorks { [ weak self ] in
             self?._view.itemsCollection.reloadData()
             self?._view.refreshControl.endRefreshing()
         }
+    }
+    
+    @objc private func selectWorkToSale(sender: UIView) {
+        guard let index = _view.itemsCollection.currentSelectedIndex,
+              let workItem = viewModel.artWorks[exist: index]
+        else { return }
+        
+        sender.tapAnimation()
+        VibroGenerator.light.impactOccurred()
+        
+        coordinator.openWorkDetailsEditor(artWork: workItem)
     }
 }
 
@@ -89,7 +102,7 @@ extension WorksViewController: LightSelectionCollectionViewDelegate {
     }
     
     func lightSelectionCollectionView(_ collection: LightSelectionCollectionView, selectedItemDidChanged itemIndex: Int?) {
-        
+        _view.hiddableButton.manageVisibility(hidden: itemIndex == nil)
     }
     
     func lightSelectionCollectionView(tooltipFor collection: LightSelectionCollectionView, itemLongPressStart itemIndex: Int) -> String? {

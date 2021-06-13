@@ -13,6 +13,7 @@ enum UserStoriesModulesDefault: ModuleGenerator {
     case settings
     case aboutUs
     case loading
+    case workDetailsEditor
     case works
     case mainMenu
     case salesHistory
@@ -26,6 +27,8 @@ enum UserStoriesModulesDefault: ModuleGenerator {
             return AboutUsCoordinator.createModule()
         case .loading: 
             return LoadingCoordinator.createModule()
+        case .workDetailsEditor: 
+            return WorkDetailsEditorCoordinator.createModule()
         case .works: 
             return WorksCoordinator.createModule()
         case .mainMenu: 
@@ -43,6 +46,7 @@ enum UserStoriesModulesWithOutput: ModuleGenerator {
     case settings(output: SettingsOutput)
     case aboutUs(output: AboutUsOutput)
     case loading(output: LoadingOutput)
+    case workDetailsEditor(output: WorkDetailsEditorOutput)
     case works(output: WorksOutput)
     case mainMenu(output: MainMenuOutput)
     case salesHistory(output: SalesHistoryOutput)
@@ -62,6 +66,11 @@ enum UserStoriesModulesWithOutput: ModuleGenerator {
             
         case .loading(let output): 
             return LoadingCoordinator.createModule { viewModel in 
+                viewModel.output = output
+            }
+            
+        case .workDetailsEditor(let output): 
+            return WorkDetailsEditorCoordinator.createModule { viewModel in 
                 viewModel.output = output
             }
             

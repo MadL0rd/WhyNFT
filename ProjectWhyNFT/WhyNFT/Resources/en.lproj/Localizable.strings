@@ -26,11 +26,18 @@
 // Other
 "announcementText" = "Will be added in the next version";
 
+// Common UI
+"choose" = "Choose";
+
 // PortfolioAuthentication
 "portfolioAuthenticationTitle" = "Connect Portfolio";
 "portfolioAuthenticationSubtitle" = "Link the services you use to host your portfolio to create an NFT from your art";
 "portfolioAuthenticationDribbbleName" = "Dribbble";
 "portfolioAuthenticationBehanceName" = "Behance";
+
+// SalesHistory
+"salesHistoryTitle" = "Your NFTs";
+"salesHistorySubitle" = "Status and history of your NFTs";
 
 // Works
 "addNewItem" = "Add new item";
@@ -50,3 +57,7 @@
 
 // About us
 "aboutUsTitle" = "About us";
+
+// WorkDetailsEditor
+"workDetailsEditorTitle" = "Add details";
+"workDetailsEditorSubtitle" = "Write what went into this shot, and anything else you’d like to mention";

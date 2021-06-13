@@ -32,4 +32,10 @@ final class WorksCoordinator: DefaultCoordinator {
 // MARK: - Interface for view
 extension WorksCoordinator: WorksCoordinatorProtocol {
 
+    func openWorkDetailsEditor(artWork: ArtWork) {
+        let vc = WorkDetailsEditorCoordinator.createModule { viewModel in
+            viewModel.artWork = artWork
+        }
+        transition.showInRootNavigationController(vc)
+    }
 }

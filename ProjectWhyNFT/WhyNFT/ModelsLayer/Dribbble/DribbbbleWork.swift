@@ -9,6 +9,9 @@ import Foundation
 
 struct DribbbleWork: Codable, ArtWork {
 
+    var artId: Int {
+        return id
+    }
     var artPreviewUrl: URL? {
         return URL(string: images.normal)
     }

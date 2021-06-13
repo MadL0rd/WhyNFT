@@ -101,6 +101,15 @@
 		8965F1352675CC4300454B69 /* AboutUsInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8965F12C2675CC4300454B69 /* AboutUsInput.swift */; };
 		8965F1362675CC4300454B69 /* AboutUsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8965F12E2675CC4300454B69 /* AboutUsView.swift */; };
 		8965F1372675CC4300454B69 /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8965F12F2675CC4300454B69 /* AboutUsViewController.swift */; };
+		8965F1392675D38900454B69 /* HiddableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8965F1382675D38900454B69 /* HiddableButton.swift */; };
+		8965F1492675DAD900454B69 /* WorkDetailsEditorViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8965F13F2675DAD900454B69 /* WorkDetailsEditorViewModelProtocol.swift */; };
+		8965F14A2675DAD900454B69 /* WorkDetailsEditorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8965F1402675DAD900454B69 /* WorkDetailsEditorViewModel.swift */; };
+		8965F14B2675DAD900454B69 /* WorkDetailsEditorCoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8965F1422675DAD900454B69 /* WorkDetailsEditorCoordinatorProtocol.swift */; };
+		8965F14C2675DAD900454B69 /* WorkDetailsEditorCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8965F1432675DAD900454B69 /* WorkDetailsEditorCoordinator.swift */; };
+		8965F14D2675DAD900454B69 /* WorkDetailsEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8965F1452675DAD900454B69 /* WorkDetailsEditorView.swift */; };
+		8965F14E2675DAD900454B69 /* WorkDetailsEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8965F1462675DAD900454B69 /* WorkDetailsEditorViewController.swift */; };
+		8965F14F2675DAD900454B69 /* WorkDetailsEditorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8965F1472675DAD900454B69 /* WorkDetailsEditorOutput.swift */; };
+		8965F1502675DAD900454B69 /* WorkDetailsEditorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8965F1482675DAD900454B69 /* WorkDetailsEditorInput.swift */; };
 		8978162E2674B2C500710B13 /* MKMEGADRIVE.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8978162D2674B2C500710B13 /* MKMEGADRIVE.ttf */; };
 		897816302674B38900710B13 /* Alata-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8978162F2674B33F00710B13 /* Alata-Regular.ttf */; };
 		897816482674C6BD00710B13 /* UIColor+resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897816472674C6BD00710B13 /* UIColor+resources.swift */; };
@@ -275,6 +284,15 @@
 		8965F12C2675CC4300454B69 /* AboutUsInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutUsInput.swift; sourceTree = "<group>"; };
 		8965F12E2675CC4300454B69 /* AboutUsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutUsView.swift; sourceTree = "<group>"; };
 		8965F12F2675CC4300454B69 /* AboutUsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
+		8965F1382675D38900454B69 /* HiddableButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiddableButton.swift; sourceTree = "<group>"; };
+		8965F13F2675DAD900454B69 /* WorkDetailsEditorViewModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkDetailsEditorViewModelProtocol.swift; sourceTree = "<group>"; };
+		8965F1402675DAD900454B69 /* WorkDetailsEditorViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkDetailsEditorViewModel.swift; sourceTree = "<group>"; };
+		8965F1422675DAD900454B69 /* WorkDetailsEditorCoordinatorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkDetailsEditorCoordinatorProtocol.swift; sourceTree = "<group>"; };
+		8965F1432675DAD900454B69 /* WorkDetailsEditorCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkDetailsEditorCoordinator.swift; sourceTree = "<group>"; };
+		8965F1452675DAD900454B69 /* WorkDetailsEditorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkDetailsEditorView.swift; sourceTree = "<group>"; };
+		8965F1462675DAD900454B69 /* WorkDetailsEditorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkDetailsEditorViewController.swift; sourceTree = "<group>"; };
+		8965F1472675DAD900454B69 /* WorkDetailsEditorOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkDetailsEditorOutput.swift; sourceTree = "<group>"; };
+		8965F1482675DAD900454B69 /* WorkDetailsEditorInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkDetailsEditorInput.swift; sourceTree = "<group>"; };
 		8978162D2674B2C500710B13 /* MKMEGADRIVE.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MKMEGADRIVE.ttf; sourceTree = "<group>"; };
 		8978162F2674B33F00710B13 /* Alata-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Alata-Regular.ttf"; sourceTree = "<group>"; };
 		897816472674C6BD00710B13 /* UIColor+resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+resources.swift"; sourceTree = "<group>"; };
@@ -571,6 +589,7 @@
 				899AAFDA2656AC460066CA10 /* VibroGenerator.swift */,
 				894B1EBD26751AAB00EF8277 /* LabelMixedFont.swift */,
 				8965F0EE26757CAC00454B69 /* DoubleTitledView.swift */,
+				8965F1382675D38900454B69 /* HiddableButton.swift */,
 			);
 			path = UIElements;
 			sourceTree = "<group>";
@@ -782,6 +801,45 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		8965F13D2675DAD900454B69 /* WorkDetailsEditor */ = {
+			isa = PBXGroup;
+			children = (
+				8965F1482675DAD900454B69 /* WorkDetailsEditorInput.swift */,
+				8965F1472675DAD900454B69 /* WorkDetailsEditorOutput.swift */,
+				8965F13E2675DAD900454B69 /* ViewModel */,
+				8965F1412675DAD900454B69 /* Coordinator */,
+				8965F1442675DAD900454B69 /* View */,
+			);
+			path = WorkDetailsEditor;
+			sourceTree = "<group>";
+		};
+		8965F13E2675DAD900454B69 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8965F13F2675DAD900454B69 /* WorkDetailsEditorViewModelProtocol.swift */,
+				8965F1402675DAD900454B69 /* WorkDetailsEditorViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8965F1412675DAD900454B69 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				8965F1422675DAD900454B69 /* WorkDetailsEditorCoordinatorProtocol.swift */,
+				8965F1432675DAD900454B69 /* WorkDetailsEditorCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		8965F1442675DAD900454B69 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8965F1462675DAD900454B69 /* WorkDetailsEditorViewController.swift */,
+				8965F1452675DAD900454B69 /* WorkDetailsEditorView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		8978164B2674C93200710B13 /* DribbbleNetworkService */ = {
 			isa = PBXGroup;
 			children = (
@@ -965,6 +1023,7 @@
 				89F275B026750A1E005DFA9F /* Works */,
 				8965F1082675C21700454B69 /* Settings */,
 				8965F1242675CC4300454B69 /* AboutUs */,
+				8965F13D2675DAD900454B69 /* WorkDetailsEditor */,
 			);
 			path = UserStories;
 			sourceTree = "<group>";
@@ -1300,7 +1359,9 @@
 				8965F1322675CC4300454B69 /* AboutUsCoordinator.swift in Sources */,
 				897816582674C93200710B13 /* DribbbleRequestResults.swift in Sources */,
 				899AAFDB2656AC460066CA10 /* VibroGenerator.swift in Sources */,
+				8965F14C2675DAD900454B69 /* WorkDetailsEditorCoordinator.swift in Sources */,
 				89F275D326750A1E005DFA9F /* WorksCoordinatorProtocol.swift in Sources */,
+				8965F14A2675DAD900454B69 /* WorkDetailsEditorViewModel.swift in Sources */,
 				8965F0E22675550D00454B69 /* DribbbbleWork.swift in Sources */,
 				8965F11C2675C21700454B69 /* SettingsOutput.swift in Sources */,
 				8965F1372675CC4300454B69 /* AboutUsViewController.swift in Sources */,
@@ -1330,6 +1391,7 @@
 				8940652F2612327C00DC682F /* LoadingViewController.swift in Sources */,
 				894064DB2612308800DC682F /* UIView+TapAnimation.swift in Sources */,
 				897816792674EE1D00710B13 /* MainMenuCoordinator.swift in Sources */,
+				8965F14F2675DAD900454B69 /* WorkDetailsEditorOutput.swift in Sources */,
 				8965F0ED26756F0A00454B69 /* LightSelectionCollectionMenuItem.swift in Sources */,
 				8978167A2674EE1D00710B13 /* MainMenuCoordinatorProtocol.swift in Sources */,
 				8978167E2674EE1D00710B13 /* MainMenuOutput.swift in Sources */,
@@ -1338,6 +1400,7 @@
 				89F275DD26750A1E005DFA9F /* SalesHistoryView.swift in Sources */,
 				8965F1362675CC4300454B69 /* AboutUsView.swift in Sources */,
 				8965F0F1267595F100454B69 /* LightSelectionCollectionViewDelegate.swift in Sources */,
+				8965F1492675DAD900454B69 /* WorkDetailsEditorViewModelProtocol.swift in Sources */,
 				894064F22612308800DC682F /* ScrollMovingUpManagerForUIControl.swift in Sources */,
 				894064D82612308800DC682F /* AlertManager.swift in Sources */,
 				8940645126122B7600DC682F /* CustomPatchEncoding.swift in Sources */,
@@ -1355,6 +1418,7 @@
 				8978167D2674EE1D00710B13 /* MainMenuViewController.swift in Sources */,
 				89F275DE26750A1E005DFA9F /* SalesHistoryViewController.swift in Sources */,
 				8965F1312675CC4300454B69 /* AboutUsViewModel.swift in Sources */,
+				8965F1392675D38900454B69 /* HiddableButton.swift in Sources */,
 				8981FD822656EC5600993B65 /* AlertPresentationView.swift in Sources */,
 				89F275D826750A1E005DFA9F /* SalesHistoryViewModel.swift in Sources */,
 				8965F1002675AE0D00454B69 /* PortfolioAuthenticationViewModelProtocol.swift in Sources */,
@@ -1366,6 +1430,7 @@
 				892B1FA4261D2EA200329B0A /* String+capitalizingFirstLetter.swift in Sources */,
 				8940645626122B7600DC682F /* DataRequestExecutable.swift in Sources */,
 				8965F1332675CC4300454B69 /* AboutUsCoordinatorProtocol.swift in Sources */,
+				8965F14E2675DAD900454B69 /* WorkDetailsEditorViewController.swift in Sources */,
 				894064E82612308800DC682F /* UITextField+placeholderPadding.swift in Sources */,
 				8965F1032675AE0D00454B69 /* PortfolioAuthenticationCoordinatorProtocol.swift in Sources */,
 				89E608662658897C00E6707C /* Contacts.swift in Sources */,
@@ -1377,6 +1442,7 @@
 				897816662674E36C00710B13 /* KeychainStorageError.swift in Sources */,
 				8940645526122B7600DC682F /* NetworkErrors.swift in Sources */,
 				8965F1352675CC4300454B69 /* AboutUsInput.swift in Sources */,
+				8965F14D2675DAD900454B69 /* WorkDetailsEditorView.swift in Sources */,
 				894064ED2612308800DC682F /* LimitatableTextView.swift in Sources */,
 				89F275D026750A1E005DFA9F /* WorksViewModelProtocol.swift in Sources */,
 				894064D92612308800DC682F /* ColorPickerView.swift in Sources */,
@@ -1387,6 +1453,7 @@
 				89F00AB12542E16200D482F6 /* MainAppRouter.swift in Sources */,
 				8965F1192675C21700454B69 /* SettingsView.swift in Sources */,
 				89F2759D2675056A005DFA9F /* CustomTabBar.swift in Sources */,
+				8965F14B2675DAD900454B69 /* WorkDetailsEditorCoordinatorProtocol.swift in Sources */,
 				894064DC2612308800DC682F /* UIView+layerAnimation.swift in Sources */,
 				894064E52612308800DC682F /* UIView+shake.swift in Sources */,
 				8965F1182675C21700454B69 /* SettingsCoordinator.swift in Sources */,
@@ -1422,6 +1489,7 @@
 				8965F0E42675552E00454B69 /* ArtWork.swift in Sources */,
 				897816562674C93200710B13 /* DribbbleNetworkService.swift in Sources */,
 				8978165B2674C93200710B13 /* DribbbleRequestBuilder.swift in Sources */,
+				8965F1502675DAD900454B69 /* WorkDetailsEditorInput.swift in Sources */,
 				89F00A9D2542E16200D482F6 /* UIConstants.swift in Sources */,
 				892B1F9F261D2EA200329B0A /* SKProduct+localizedPrice.swift in Sources */,
 				8978165A2674C93200710B13 /* DribbbleRoutes.swift in Sources */,

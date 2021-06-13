@@ -19,6 +19,16 @@ final class SalesHistoryViewController: UIViewController {
     override func loadView() {
         self.view = SalesHistoryView()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        _view.titlesView.refreshMixedFontText()
+        
+        navigationController?.navigationBar.barStyle = .black
+        navigationController?.navigationBar.tintColor = R.color.tintMain()
+        navigationController?.navigationBar.topItem?.backButtonTitle = ""
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()

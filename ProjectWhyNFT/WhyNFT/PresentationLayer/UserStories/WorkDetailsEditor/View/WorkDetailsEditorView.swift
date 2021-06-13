@@ -1,13 +1,13 @@
 //
-//  SalesHistoryView.swift
+//  WorkDetailsEditorView.swift
 //  WhyNFT
 //
-//  Created by Антон Текутов on 12.06.2021.
+//  Created by Антон Текутов on 13.06.2021.
 //
 
 import UIKit
 
-final class SalesHistoryView: UIView {
+final class WorkDetailsEditorView: UIView {
     
     let titleBackground = UIView()
     let titlesView = DoubleTitledView()
@@ -28,7 +28,7 @@ final class SalesHistoryView: UIView {
     
     private func setupView() {
         backgroundColor = .res.background()
-        
+
         addSubview(titleBackground)
         titleBackground.translatesAutoresizingMaskIntoConstraints = false
         titleBackground.backgroundColor = .res.background()
@@ -36,15 +36,15 @@ final class SalesHistoryView: UIView {
         
         addSubview(titlesView)
         titlesView.translatesAutoresizingMaskIntoConstraints = false
-        titlesView.setTitles(title: R.string.localizable.salesHistoryTitle(),
-                             subtitle: R.string.localizable.salesHistorySubitle())
-                
+        titlesView.setTitles(title: R.string.localizable.workDetailsEditorTitle(),
+                             subtitle: R.string.localizable.workDetailsEditorSubtitle())
+
         makeConstraints()
     }
 
     private func makeConstraints() {
         NSLayoutConstraint.activate([
-            titlesView.topAnchor.constraint(equalTo: topAnchor, constant: UIConstants.statusBarHeight + 24),
+            titlesView.topAnchor.constraint(equalTo: topAnchor, constant: UIConstants.navigationBarHeight + 24),
             titlesView.widthAnchor.constraint(equalTo: widthAnchor, constant: -48),
             titlesView.centerXAnchor.constraint(equalTo: centerXAnchor),
             

@@ -7,4 +7,5 @@
 
 protocol WorksCoordinatorProtocol: DefaultCoordinatorProtocol {
     
+    func openWorkDetailsEditor(artWork: ArtWork)
 }

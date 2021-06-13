@@ -9,6 +9,7 @@ import Foundation
 
 protocol ArtWork {
     
+    var artId: Int { get }
     var artPreviewUrl: URL? { get }
     var artHtmlUrl: URL? { get }
     var artTitle: String? { get }

@@ -14,6 +14,11 @@ final class WorksView: UIView {
     
     let itemsCollection = LightSelectionCollectionView()
     let refreshControl = UIRefreshControl()
+    
+    let hiddableButton = HiddableButton()
+    var selectButton: UIButton {
+        hiddableButton.button
+    }
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -48,6 +53,9 @@ final class WorksView: UIView {
         titlesView.translatesAutoresizingMaskIntoConstraints = false
         titlesView.setTitles(title: R.string.localizable.addNewItem(),
                              subtitle: R.string.localizable.addNewItemSubtitle())
+        
+        addSubview(hiddableButton)
+        hiddableButton.translatesAutoresizingMaskIntoConstraints = false
                 
         makeConstraints()
     }
@@ -66,7 +74,11 @@ final class WorksView: UIView {
             itemsCollection.topAnchor.constraint(equalTo: topAnchor, constant: UIConstants.statusBarHeight),
             itemsCollection.centerYAnchor.constraint(equalTo: centerYAnchor),
             itemsCollection.widthAnchor.constraint(equalTo: widthAnchor),
-            itemsCollection.bottomAnchor.constraint(equalTo: bottomAnchor)
+            itemsCollection.bottomAnchor.constraint(equalTo: bottomAnchor),
+            
+            hiddableButton.centerYAnchor.constraint(equalTo: centerYAnchor),
+            hiddableButton.widthAnchor.constraint(equalTo: widthAnchor),
+            hiddableButton.bottomAnchor.constraint(equalTo: bottomAnchor, constant: 16)
         ])
     }
 }
