@@ -905,8 +905,8 @@
 			children = (
 				8965F1482675DAD900454B69 /* WorkDetailsEditorInput.swift */,
 				8965F1472675DAD900454B69 /* WorkDetailsEditorOutput.swift */,
-				8965F13E2675DAD900454B69 /* ViewModel */,
 				8965F1412675DAD900454B69 /* Coordinator */,
+				8965F13E2675DAD900454B69 /* ViewModel */,
 				8965F1442675DAD900454B69 /* View */,
 			);
 			path = WorkDetailsEditor;
@@ -1764,7 +1764,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.0;
+				MARKETING_VERSION = 1.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.atekutov.nafthalene;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
@@ -1787,7 +1787,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.0;
+				MARKETING_VERSION = 1.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.atekutov.nafthalene;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
@@ -1821,7 +1821,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.0;
+				MARKETING_VERSION = 1.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.atekutov.nafthalene;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;

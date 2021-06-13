@@ -13,5 +13,7 @@ protocol RaribleNetworkServiceProtocol: AnyObject {
     func validateUserId(completion: @escaping RaribleValidateUserIdCompletion)
     func setUserId(_ id: String)
     func forgetUserId()
+    
+    func workSaleRequest(artWork: ArtWork, completion: @escaping WorkRequestCompletion)
 }
 

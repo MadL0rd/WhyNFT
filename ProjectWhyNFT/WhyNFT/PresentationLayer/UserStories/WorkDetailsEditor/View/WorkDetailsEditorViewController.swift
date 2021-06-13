@@ -27,6 +27,25 @@ final class WorkDetailsEditorViewController: UIViewController {
     }
 
     private func configureSelf() {
+        let loadingHUD = AlertManager.getLoadingHUD(on: view)
+        loadingHUD.show(in: view)
         
+        viewModel.workSaleRequest { [ weak self ] result in
+            guard let self = self
+            else { return }
+            
+            loadingHUD.dismiss()
+            switch result {
+            case .success(let data):
+                AlertManager.showSuccessHUD(on: self._view)
+                self._view.titlesView.subtitleLabel.text = data.result
+
+            case .failure(let error):
+                AlertManager.showErrorHUD(on: self._view)
+                self._view.titlesView.subtitleLabel.text = "Error!"
+                print(error)
+            }
+            
+        }
     }
 }

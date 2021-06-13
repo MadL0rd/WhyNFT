@@ -18,6 +18,8 @@ final class WorkDetailsEditorCoordinator: DefaultCoordinator {
         view.coordinator = coordinator
 
         coordinator.transition = view
+        
+        viewModel.raribleService = RaribleNetworkService.shared
 
         if let configuration = configuration {
             configuration(viewModel)

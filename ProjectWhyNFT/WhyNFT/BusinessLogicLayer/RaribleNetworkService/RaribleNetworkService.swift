@@ -56,4 +56,19 @@ extension RaribleNetworkService: RaribleNetworkServiceProtocol {
     func forgetUserId() {
         userId = nil
     }
+    
+    func workSaleRequest(artWork: ArtWork, completion: @escaping WorkRequestCompletion) {
+        let storrage = SecureStorage.shared
+        let token = storrage.getStringValue(for: .userTokenDrobbble)
+        guard let token = token,
+              let userId = userId
+        else {
+            completion(.failure(.badToken))
+            return
+        }
+        
+        let request = requestBuilder.work(tokenDribbble: token, workId: String(artWork.artId), userWalletId: userId)
+        makeDefaultRequest(dataRequest: request, completion: completion)
+    }
+
 }

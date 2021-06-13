@@ -8,4 +8,7 @@
 protocol WorkDetailsEditorViewModelProtocol: AnyObject {
     
     var artWork: ArtWork! { get }
+    
+    func workSaleRequest(completion: @escaping WorkRequestCompletion)
+
 }

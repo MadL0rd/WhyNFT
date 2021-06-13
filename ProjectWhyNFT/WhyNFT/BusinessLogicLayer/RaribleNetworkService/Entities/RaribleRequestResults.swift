@@ -7,3 +7,7 @@
 
 import Foundation
 
+struct WorkRequestResult: Codable {
+    
+    let result: String
+}

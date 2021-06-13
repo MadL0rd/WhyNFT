@@ -9,9 +9,9 @@ import Alamofire
 
 enum RaribleRoutes: String, URLConvertible {
     
-    static let endpoint = "http://5245dc8666af.ngrok.io/api/"
+    static let endpoint = "http://188.225.39.228:8015/api/"
     
-    case work = "work/"
+    case work = "work"
 
     func asURL() throws -> URL {
         guard let url = URL(string: RaribleRoutes.endpoint + self.rawValue)
