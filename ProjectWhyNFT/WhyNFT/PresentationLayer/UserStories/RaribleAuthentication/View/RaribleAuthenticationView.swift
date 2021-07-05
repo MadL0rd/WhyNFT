@@ -52,7 +52,7 @@ final class RaribleAuthenticationView: UIView {
         stack.spacing = 12
         
         stack.addArrangedSubview(linkButton)
-        UIStyleManager.buttonDefault(linkButton)
+        UIStyleManager.buttonPrimary(linkButton)
         linkButton.backgroundColor = .res.backgroundInput()
         linkButton.setTitleColor(.res.tintMain(), for: .normal)
         linkButton.setTitleColor(.res.tintMain(), for: .selected)
@@ -63,7 +63,7 @@ final class RaribleAuthenticationView: UIView {
         UIStyleManager.textFieldDefault(textField: userIdTextField, placeholderText: R.string.localizable.raribleAuthenticationInputPlaceholder())
         
         stack.addArrangedSubview(signInButton)
-        UIStyleManager.buttonDefault(signInButton)
+        UIStyleManager.buttonPrimary(signInButton)
         signInButton.setTitle(R.string.localizable.raribleAuthenticationSignInButton(), for: .normal)
         signInButton.isHidden = true
         

@@ -16,7 +16,7 @@ class LimitatableTextView: UIControl {
     
     private var textViewHeightConstraint: NSLayoutConstraint!
     var textViewMaxHeight: CGFloat = UIConstants.screenBounds.height * 0.32
-    var textViewMinHeight: CGFloat = 70
+    var textViewMinHeight: CGFloat = 50
     
     weak var sizeUpdateDelegate: SizeUpdateDelegate?
     
@@ -29,6 +29,7 @@ class LimitatableTextView: UIControl {
         }
     }
     
+    let titleLabel = UILabel()
     let textEditor = UITextView()
     let countLabel = UILabel()
     let placeholder = UILabel()
@@ -108,18 +109,28 @@ class LimitatableTextView: UIControl {
         
         backgroundColor = .clear
         
+        addSubview(titleLabel)
+        titleLabel.translatesAutoresizingMaskIntoConstraints = false
+        titleLabel.font = .res.alataRegular(size: 12)
+        titleLabel.numberOfLines = 0
+        titleLabel.textColor = .res.tintMain()
+        
         addSubview(textEditor)
         textEditor.translatesAutoresizingMaskIntoConstraints = false
         textEditor.backgroundColor = R.color.backgroundInput()
-        textEditor.layer.cornerRadius = 16
+        textEditor.layer.cornerRadius = 12
+        textEditor.layer.borderWidth = 1
+        textEditor.layer.borderColor = R.color.tintMain()?.cgColor
         textEditor.delegate = self
         textEditor.textContainerInset = UIEdgeInsets(top: 18, left: 18, bottom: 18, right: 18)
-        textEditor.font = R.font.gilroyRegular(size: 14)
+        textEditor.font = R.font.alataRegular(size: 14)
+        textEditor.textColor = .res.tintGray()
         
         addSubview(countLabel)
         countLabel.translatesAutoresizingMaskIntoConstraints = false
-        countLabel.font = R.font.gilroyBold(size: 10)
-        countLabel.textColor = R.color.tintGray()
+        countLabel.font = .res.alataRegular(size: 12)
+        countLabel.numberOfLines = 0
+        countLabel.textColor = .res.tintMain()
         countLabel.alpha = 0.5
         
         addSubview(placeholder)
@@ -137,11 +148,15 @@ class LimitatableTextView: UIControl {
     private func makeConstraints() {
         textViewHeightConstraint = textEditor.heightAnchor.constraint(equalToConstant: textViewMinHeight)
         NSLayoutConstraint.activate([
-            textEditor.topAnchor.constraint(equalTo: topAnchor),
+            titleLabel.topAnchor.constraint(equalTo: topAnchor),
+            titleLabel.leftAnchor.constraint(equalTo: leftAnchor),
+            titleLabel.rightAnchor.constraint(equalTo: rightAnchor),
+            
+            textEditor.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 6),
             textEditor.leftAnchor.constraint(equalTo: leftAnchor),
             textEditor.rightAnchor.constraint(equalTo: rightAnchor),
-            textEditor.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -20),
             
+            countLabel.topAnchor.constraint(equalTo: textEditor.bottomAnchor, constant: 6),
             countLabel.bottomAnchor.constraint(equalTo: bottomAnchor),
             countLabel.rightAnchor.constraint(equalTo: rightAnchor),
             

@@ -13,7 +13,7 @@ struct DribbbleWork: Codable, ArtWork {
         return id
     }
     var artPreviewUrl: URL? {
-        return URL(string: images.normal)
+        return URL(string: images.normal ?? "")
     }
     var artHtmlUrl: URL? {
         return URL(string: htmlURL)
@@ -24,9 +24,12 @@ struct DribbbleWork: Codable, ArtWork {
     var artDescription: String? {
         return description
     }
+    var ardServiceType: SupportedArtWorksServices {
+        return .dribbble
+    }
     
     let animated: Bool
-    let description: String
+    let description: String?
     let height: Int
     let htmlURL: String
     let id: Int
@@ -53,9 +56,9 @@ struct DribbbleWork: Codable, ArtWork {
 }
 
 struct DribbbleWorkImages: Codable {
-    let hidpi: String
-    let normal: String
-    let teaser: String
+    let hidpi: String?
+    let normal: String?
+    let teaser: String?
     
     enum CodingKeys: String, CodingKey {
         case hidpi

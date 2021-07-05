@@ -42,8 +42,9 @@ final class WorksView: UIView {
         itemsCollection.longPressHandlerAvailable = true
         
         refreshControl.tintColor = .res.tintMain()
+        refreshControl.translatesAutoresizingMaskIntoConstraints = false
         itemsCollection.collectionView.refreshControl = refreshControl
-        
+
         addSubview(titleBackground)
         titleBackground.translatesAutoresizingMaskIntoConstraints = false
         titleBackground.backgroundColor = .res.background()
@@ -71,6 +72,9 @@ final class WorksView: UIView {
             titleBackground.rightAnchor.constraint(equalTo: rightAnchor),
             titleBackground.bottomAnchor.constraint(equalTo: titlesView.bottomAnchor, constant: 24),
             
+            refreshControl.centerXAnchor.constraint(equalTo: itemsCollection.centerXAnchor),
+            refreshControl.topAnchor.constraint(equalTo: itemsCollection.topAnchor, constant: 155),
+            
             itemsCollection.topAnchor.constraint(equalTo: topAnchor, constant: UIConstants.statusBarHeight),
             itemsCollection.centerYAnchor.constraint(equalTo: centerYAnchor),
             itemsCollection.widthAnchor.constraint(equalTo: widthAnchor),
@@ -78,7 +82,7 @@ final class WorksView: UIView {
             
             hiddableButton.centerYAnchor.constraint(equalTo: centerYAnchor),
             hiddableButton.widthAnchor.constraint(equalTo: widthAnchor),
-            hiddableButton.bottomAnchor.constraint(equalTo: bottomAnchor, constant: 16)
+            hiddableButton.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -.res.customTabBarHeight + 12)
         ])
     }
 }

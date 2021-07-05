@@ -36,6 +36,6 @@ struct UIConstants {
     }()
     
     static let customTabBarHeight: CGFloat = {
-        return 64
+        return 64 + (UIApplication.shared.keyWindow?.safeAreaInsets.bottom ?? 0)
     }()
 }

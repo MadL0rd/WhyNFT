@@ -66,7 +66,6 @@
 		894065EA261328E100DC682F /* Gilroy-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 894065E6261328E100DC682F /* Gilroy-Light.ttf */; };
 		894065EB261328E100DC682F /* Gilroy-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 894065E7261328E100DC682F /* Gilroy-Semibold.ttf */; };
 		894065EC261328E100DC682F /* Gilroy-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 894065E8261328E100DC682F /* Gilroy-Bold.ttf */; };
-		894952012674F8A3000CACB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 894952002674F8A3000CACB5 /* Assets.xcassets */; };
 		894B1EBE26751AAB00EF8277 /* LabelMixedFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894B1EBD26751AAB00EF8277 /* LabelMixedFont.swift */; };
 		8960BDD02676008000830681 /* RaribleNetworkServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8960BDC72676008000830681 /* RaribleNetworkServiceProtocol.swift */; };
 		8960BDD12676008000830681 /* RaribleRequestResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8960BDC92676008000830681 /* RaribleRequestResults.swift */; };
@@ -125,6 +124,9 @@
 		8965F14E2675DAD900454B69 /* WorkDetailsEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8965F1462675DAD900454B69 /* WorkDetailsEditorViewController.swift */; };
 		8965F14F2675DAD900454B69 /* WorkDetailsEditorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8965F1472675DAD900454B69 /* WorkDetailsEditorOutput.swift */; };
 		8965F1502675DAD900454B69 /* WorkDetailsEditorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8965F1482675DAD900454B69 /* WorkDetailsEditorInput.swift */; };
+		896F4AD82692A22B00E9F65C /* GlowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896F4AD72692A22B00E9F65C /* GlowView.swift */; };
+		896F4ADA2692A7F800E9F65C /* SupportedArtWorksServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896F4AD92692A7F800E9F65C /* SupportedArtWorksServices.swift */; };
+		896F4ADC2692BAB200E9F65C /* UIView+getAllSubviewsWithType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896F4ADB2692BAB200E9F65C /* UIView+getAllSubviewsWithType.swift */; };
 		8978162E2674B2C500710B13 /* MKMEGADRIVE.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8978162D2674B2C500710B13 /* MKMEGADRIVE.ttf */; };
 		897816302674B38900710B13 /* Alata-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8978162F2674B33F00710B13 /* Alata-Regular.ttf */; };
 		897816482674C6BD00710B13 /* UIColor+resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897816472674C6BD00710B13 /* UIColor+resources.swift */; };
@@ -264,7 +266,6 @@
 		894065E6261328E100DC682F /* Gilroy-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Light.ttf"; sourceTree = "<group>"; };
 		894065E7261328E100DC682F /* Gilroy-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Semibold.ttf"; sourceTree = "<group>"; };
 		894065E8261328E100DC682F /* Gilroy-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Bold.ttf"; sourceTree = "<group>"; };
-		894952002674F8A3000CACB5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		894B1EBD26751AAB00EF8277 /* LabelMixedFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelMixedFont.swift; sourceTree = "<group>"; };
 		8960BDC72676008000830681 /* RaribleNetworkServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RaribleNetworkServiceProtocol.swift; sourceTree = "<group>"; };
 		8960BDC92676008000830681 /* RaribleRequestResults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RaribleRequestResults.swift; sourceTree = "<group>"; };
@@ -323,6 +324,9 @@
 		8965F1462675DAD900454B69 /* WorkDetailsEditorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkDetailsEditorViewController.swift; sourceTree = "<group>"; };
 		8965F1472675DAD900454B69 /* WorkDetailsEditorOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkDetailsEditorOutput.swift; sourceTree = "<group>"; };
 		8965F1482675DAD900454B69 /* WorkDetailsEditorInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkDetailsEditorInput.swift; sourceTree = "<group>"; };
+		896F4AD72692A22B00E9F65C /* GlowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlowView.swift; sourceTree = "<group>"; };
+		896F4AD92692A7F800E9F65C /* SupportedArtWorksServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportedArtWorksServices.swift; sourceTree = "<group>"; };
+		896F4ADB2692BAB200E9F65C /* UIView+getAllSubviewsWithType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+getAllSubviewsWithType.swift"; sourceTree = "<group>"; };
 		8978162D2674B2C500710B13 /* MKMEGADRIVE.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MKMEGADRIVE.ttf; sourceTree = "<group>"; };
 		8978162F2674B33F00710B13 /* Alata-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Alata-Regular.ttf"; sourceTree = "<group>"; };
 		897816472674C6BD00710B13 /* UIColor+resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+resources.swift"; sourceTree = "<group>"; };
@@ -471,7 +475,6 @@
 				894065E3261328E100DC682F /* Fonts */,
 				2570060E24CFB9F4D9889256 /* LaunchScreen.storyboard */,
 				89DD277125DCFB2C00AD2868 /* Colors.xcassets */,
-				894952002674F8A3000CACB5 /* Assets.xcassets */,
 				89DD277025DCFB2C00AD2868 /* Images.xcassets */,
 				89DD264A25DC9F0000AD2868 /* R.generated.swift */,
 				894065D526131BEE00DC682F /* Localizable.strings */,
@@ -580,6 +583,7 @@
 				894064C42612308800DC682F /* UIScrollView+ScrollToBottom.swift */,
 				894064C52612308800DC682F /* UITextField+placeholderPadding.swift */,
 				897816472674C6BD00710B13 /* UIColor+resources.swift */,
+				896F4ADB2692BAB200E9F65C /* UIView+getAllSubviewsWithType.swift */,
 			);
 			path = UIExtensions;
 			sourceTree = "<group>";
@@ -620,6 +624,7 @@
 				894B1EBD26751AAB00EF8277 /* LabelMixedFont.swift */,
 				8965F0EE26757CAC00454B69 /* DoubleTitledView.swift */,
 				8965F1382675D38900454B69 /* HiddableButton.swift */,
+				896F4AD72692A22B00E9F65C /* GlowView.swift */,
 			);
 			path = UIElements;
 			sourceTree = "<group>";
@@ -1099,6 +1104,7 @@
 			children = (
 				8965F0E32675552E00454B69 /* ArtWork.swift */,
 				8965F0E0267554F500454B69 /* Dribbble */,
+				896F4AD92692A7F800E9F65C /* SupportedArtWorksServices.swift */,
 			);
 			path = ModelsLayer;
 			sourceTree = "<group>";
@@ -1316,7 +1322,6 @@
 			files = (
 				894065E9261328E100DC682F /* Gilroy-Regular.ttf in Resources */,
 				89DD277325DCFB2C00AD2868 /* Colors.xcassets in Resources */,
-				894952012674F8A3000CACB5 /* Assets.xcassets in Resources */,
 				8978162E2674B2C500710B13 /* MKMEGADRIVE.ttf in Resources */,
 				894065EB261328E100DC682F /* Gilroy-Semibold.ttf in Resources */,
 				C8E8E8C4BB4C54647917C3C7 /* LaunchScreen.storyboard in Resources */,
@@ -1472,6 +1477,7 @@
 				894064F32612308800DC682F /* ArrowDownButton.swift in Sources */,
 				89F2759B26750534005DFA9F /* TabBarModuleTransitionHandler.swift in Sources */,
 				897816622674E36C00710B13 /* SettingsStoring.swift in Sources */,
+				896F4ADA2692A7F800E9F65C /* SupportedArtWorksServices.swift in Sources */,
 				894064DA2612308800DC682F /* PickerViewManager.swift in Sources */,
 				8960BE002676050100830681 /* RaribleAuthenticationView.swift in Sources */,
 				8978167B2674EE1D00710B13 /* MainMenuInput.swift in Sources */,
@@ -1488,6 +1494,7 @@
 				8965F1162675C21700454B69 /* SettingsViewModel.swift in Sources */,
 				8965F0E726756C2600454B69 /* LightSelectionCollectionView.swift in Sources */,
 				8940652B2612327C00DC682F /* LoadingOutput.swift in Sources */,
+				896F4AD82692A22B00E9F65C /* GlowView.swift in Sources */,
 				897816592674C93200710B13 /* DribbbleCompletionTypealiases.swift in Sources */,
 				89DD264B25DC9F0000AD2868 /* R.generated.swift in Sources */,
 				8960BDFC2676050100830681 /* RaribleAuthenticationViewModel.swift in Sources */,
@@ -1604,6 +1611,7 @@
 				897816482674C6BD00710B13 /* UIColor+resources.swift in Sources */,
 				8965F0E42675552E00454B69 /* ArtWork.swift in Sources */,
 				897816562674C93200710B13 /* DribbbleNetworkService.swift in Sources */,
+				896F4ADC2692BAB200E9F65C /* UIView+getAllSubviewsWithType.swift in Sources */,
 				8978165B2674C93200710B13 /* DribbbleRequestBuilder.swift in Sources */,
 				8965F1502675DAD900454B69 /* WorkDetailsEditorInput.swift in Sources */,
 				89F00A9D2542E16200D482F6 /* UIConstants.swift in Sources */,

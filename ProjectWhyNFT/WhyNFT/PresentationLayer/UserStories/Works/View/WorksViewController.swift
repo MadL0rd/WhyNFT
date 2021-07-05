@@ -28,8 +28,11 @@ final class WorksViewController: UIViewController {
         navigationController?.navigationBar.barStyle = .black
         navigationController?.navigationBar.tintColor = R.color.tintMain()
         navigationController?.navigationBar.topItem?.backButtonTitle = ""
+        
+        _view.hiddableButton.manageVisibility(hidden: _view.itemsCollection.currentSelectedIndex == nil)
+        _view.itemsCollection.startGlowAnimation()
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -62,7 +65,7 @@ final class WorksViewController: UIViewController {
     @objc func handleRefreshControl() {
         _view.itemsCollection.selectionBorderedView.alpha = 0
         _view.itemsCollection.currentSelectedIndexPath = nil
-        _view.hiddableButton.manageVisibility(hidden: false)
+        _view.hiddableButton.manageVisibility(hidden: true)
         viewModel.reloadArtWorks { [ weak self ] in
             self?._view.itemsCollection.reloadData()
             self?._view.refreshControl.endRefreshing()

@@ -8,7 +8,8 @@
 protocol WorkDetailsEditorViewModelProtocol: AnyObject {
     
     var artWork: ArtWork! { get }
+    var artWorkSellingStatusCache: ArtWorkSellingStatus? { get }
     
-    func workSaleRequest(completion: @escaping WorkRequestCompletion)
-
+    func checkArkWorkStatus(completion: @escaping(Result<ArtWorkSellingStatus?, Error>) -> Void)
+    func uploadArtWork(completion: @escaping(Result<ArtWorkSellingStatus?, Error>) -> Void)
 }

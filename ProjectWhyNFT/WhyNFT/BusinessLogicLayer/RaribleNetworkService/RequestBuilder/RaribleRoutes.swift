@@ -8,8 +8,10 @@ import Alamofire
 
 enum RaribleRoutes: String, URLConvertible {
     
-    static let endpoint = "http://188.225.39.228:8015/api/"
+    static let endpoint = "https://why-nft.com/nafthalene/api/ios/v0/"
     
+    case shotsCheck = "shots"
+    case uploadWork = "upload"
     case work = "work"
 
     func asURL() throws -> URL {

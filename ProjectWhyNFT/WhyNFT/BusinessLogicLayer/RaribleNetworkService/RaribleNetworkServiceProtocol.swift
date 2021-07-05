@@ -15,5 +15,7 @@ protocol RaribleNetworkServiceProtocol: AnyObject {
     func forgetUserId()
     
     func workSaleRequest(artWork: ArtWork, completion: @escaping WorkRequestCompletion)
+    func worksAlreadyUsedCheck(artWorks: [ArtWork], completion: @escaping ShotsCheckCompletion)
+    func uploadArtwork(artWork: ArtWork, completion: @escaping UploadArtworkCompletion)
 }
 

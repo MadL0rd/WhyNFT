@@ -14,4 +14,5 @@ protocol ArtWork {
     var artHtmlUrl: URL? { get }
     var artTitle: String? { get }
     var artDescription: String? { get }
+    var ardServiceType: SupportedArtWorksServices { get }
 }

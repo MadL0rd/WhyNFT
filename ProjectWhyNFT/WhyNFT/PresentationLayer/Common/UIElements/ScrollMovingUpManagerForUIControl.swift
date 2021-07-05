@@ -26,7 +26,7 @@ class ScrollMovingUpManagerForUIControl {
     var previousScrollContentOffset: CGPoint?
     var spacingBetweenScreenTop: CGFloat
 
-    init(control: UIControl, spacingBetweenScreenTop: CGFloat = 100) {
+    init(control: UIControl, spacingBetweenScreenTop: CGFloat = 220) {
         self.control = control
         self.spacingBetweenScreenTop = spacingBetweenScreenTop
         control.addTarget(self, action: #selector(makeFocused), for: .editingDidBegin)

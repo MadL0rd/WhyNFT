@@ -66,3 +66,12 @@
 // WorkDetailsEditor
 "workDetailsEditorTitle" = "Your work sale link";
 "workDetailsEditorSubtitle" = "* Wait *";
+"workDetailsNameTitle" = "Name";
+"workDetailsEmptyPlaceholder" = "* Empty *";
+"workDetailsDescriptionTitle" = "Description";
+"workDetailsCreateNft" = "Create NFT";
+"workDetailsLookAtRarible" = "Look at Rarible";
+"workDetailsOpenWorkPageInBrowser" = "Open work page in browser";
+"workDetailsFailToCheckWorkStatusInRarible" = "Fail to check artwork status in Rarible";
+"workDetailsFailToUploadArtwork" = "Fail to create NFT from your artwork";
+

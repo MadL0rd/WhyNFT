@@ -72,7 +72,7 @@ final class MainMenuViewController: UITabBarController, TabBarModuleTransitionHa
             bar.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 5),
             bar.leftAnchor.constraint(equalTo: view.leftAnchor, constant: -5),
             bar.rightAnchor.constraint(equalTo: view.rightAnchor, constant: 5),
-            bar.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -UIConstants.customTabBarHeight + 5)
+            bar.topAnchor.constraint(equalTo: view.bottomAnchor, constant: -UIConstants.customTabBarHeight)
         ])
     }
 }

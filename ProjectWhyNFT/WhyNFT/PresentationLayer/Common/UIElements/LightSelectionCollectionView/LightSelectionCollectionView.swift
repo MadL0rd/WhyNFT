@@ -27,7 +27,7 @@ class LightSelectionCollectionView: UIView {
     private(set) var collectionView: UICollectionView!
     
     var selectionBorderedView = UIView()
-    var selectionGlow = UIImageView(image: R.image.glow())
+    var selectionGlow = GlowView()
     
     // MARK: - Variables
     
@@ -67,11 +67,9 @@ class LightSelectionCollectionView: UIView {
     // MARK: - Public methods
     
     func startGlowAnimation() {
-        UIView.transition(with: selectionGlow,
-                          duration: 0.7,
-                          options: [.autoreverse, .repeat]) { [ weak self ] in
-            self?.selectionGlow.transform = .init(scaleX: 1.3, y: 1.3)
-        }
+        guard selectionBorderedView.alpha != 0
+        else { return }
+        selectionGlow.startAnimation()
     }
     
     func reloadData() {

@@ -38,16 +38,22 @@ class HiddableButton: UIView {
     
     func manageVisibility(hidden: Bool, animated: Bool = true) {
         if animated {
-            UIView.animate(withDuration: 0.8) { [ weak self ] in
-                self?.backgroundImage.transform = .init(translationX: 0, y: hidden ? 0 : -200)
+            UIView.animate(withDuration: 0.6) { [ weak self ] in
+                self?.backgroundImage.transform = .init(translationX: 0, y: hidden ? 150 : 0)
             }
             UIView.animate(withDuration: 0.3) { [ weak self ] in
-                self?.button.transform = .init(translationX: 0, y: hidden ? 0 : -150)
+                self?.button.transform = .init(translationX: 0, y: hidden ? 150 : 0)
             }
         } else {
-            backgroundImage.transform = .init(translationX: 0, y: hidden ? 0 : -200)
-            button.transform = .init(translationX: 0, y: hidden ? 0 : -100)
+            backgroundImage.transform = .init(translationX: 0, y: hidden ? 150 : 0)
+            button.transform = .init(translationX: 0, y: hidden ? 150 : 0)
         }
+    }
+    
+    // MARK: - UI elements actions
+
+    @objc private func buttonDidTapped(sender: ButtonWithTouchSize) {
+        sender.tapAnimation()
     }
     
     // MARK: - Private setup methods
@@ -56,14 +62,14 @@ class HiddableButton: UIView {
         translatesAutoresizingMaskIntoConstraints = false
         layer.masksToBounds = true
         
-//        addSubview(backgroundImage)
-//        backgroundImage.translatesAutoresizingMaskIntoConstraints = false
-//        backgroundImage.contentMode = .scaleToFill
-//        backgroundImage.isHidden = true
+        addSubview(backgroundImage)
+        backgroundImage.translatesAutoresizingMaskIntoConstraints = false
+        backgroundImage.contentMode = .scaleToFill
         
         addSubview(button)
-        UIStyleManager.buttonDefault(button)
+        UIStyleManager.buttonPrimary(button)
         button.setTitle(R.string.localizable.choose(), for: .normal)
+        button.addTarget(self, action: #selector(buttonDidTapped(sender:)), for: .touchUpInside)
         
         manageVisibility(hidden: true, animated: false)
         
@@ -72,16 +78,16 @@ class HiddableButton: UIView {
     
     private func makeConstraints() {
         NSLayoutConstraint.activate([
-            heightAnchor.constraint(equalToConstant: 80),
+            heightAnchor.constraint(equalToConstant: 150),
             
-            button.bottomAnchor.constraint(equalTo: bottomAnchor),
+            button.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -32),
             button.centerXAnchor.constraint(equalTo: centerXAnchor),
-            button.widthAnchor.constraint(equalTo: widthAnchor, constant: -48)
+            button.widthAnchor.constraint(equalTo: widthAnchor, constant: -48),
             
-//            backgroundImage.heightAnchor.constraint(equalToConstant: 80),
-//            backgroundImage.bottomAnchor.constraint(equalTo: bottomAnchor),
-//            backgroundImage.centerXAnchor.constraint(equalTo: centerXAnchor),
-//            backgroundImage.widthAnchor.constraint(equalTo: widthAnchor)
+            backgroundImage.heightAnchor.constraint(equalToConstant: 120),
+            backgroundImage.bottomAnchor.constraint(equalTo: bottomAnchor),
+            backgroundImage.centerXAnchor.constraint(equalTo: centerXAnchor),
+            backgroundImage.widthAnchor.constraint(equalTo: widthAnchor)
         ])
     }
 }

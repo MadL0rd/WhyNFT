@@ -1,4 +1,3 @@
-
 //  RaribleNetworkService.swift
 //  WhyNFT
 //
@@ -17,6 +16,11 @@ class RaribleNetworkService: NetworkService {
         didSet {
             saveTokenInStorrage()
         }
+    }
+    
+    var userTokenDrobbble: String? {
+        let storrage = SecureStorage.shared
+        return storrage.getStringValue(for: .userTokenDrobbble)
     }
     
     override init() {
@@ -60,9 +64,7 @@ extension RaribleNetworkService: RaribleNetworkServiceProtocol {
     }
     
     func workSaleRequest(artWork: ArtWork, completion: @escaping WorkRequestCompletion) {
-        let storrage = SecureStorage.shared
-        let token = storrage.getStringValue(for: .userTokenDrobbble)
-        guard let token = token,
+        guard let token = userTokenDrobbble,
               let userId = userId
         else {
             completion(.failure(.badToken))
@@ -73,4 +75,26 @@ extension RaribleNetworkService: RaribleNetworkServiceProtocol {
         makeDefaultRequest(dataRequest: request, completion: completion)
     }
 
+    func worksAlreadyUsedCheck(artWorks: [ArtWork], completion: @escaping ShotsCheckCompletion) {
+        guard let token = userTokenDrobbble
+        else {
+            completion(.failure(.badToken))
+            return
+        }
+        
+        let request = requestBuilder.shotsCheck(tokenDribbble: token, workIds: artWorks.map { $0.artId })
+        makeDefaultRequest(dataRequest: request, completion: completion)
+    }
+    
+    func uploadArtwork(artWork: ArtWork, completion: @escaping UploadArtworkCompletion) {
+        guard let token = userTokenDrobbble,
+              let userId = userId
+        else {
+            completion(.failure(.badToken))
+            return
+        }
+        
+        let request = requestBuilder.artWorkUpload(tokenDribbble: token, workId: artWork.artId, userWalletId: userId)
+        makeDefaultRequest(dataRequest: request, completion: completion)
+    }
 }
