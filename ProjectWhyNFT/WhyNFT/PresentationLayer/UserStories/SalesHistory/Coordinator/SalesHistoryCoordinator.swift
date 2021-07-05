@@ -18,6 +18,9 @@ final class SalesHistoryCoordinator: DefaultCoordinator {
         view.coordinator = coordinator
 
         coordinator.transition = view
+        
+        viewModel.dribbbleService = DribbbleNetworkService.shared
+        viewModel.raribleService = RaribleNetworkService.shared
 
         if let configuration = configuration {
             configuration(viewModel)

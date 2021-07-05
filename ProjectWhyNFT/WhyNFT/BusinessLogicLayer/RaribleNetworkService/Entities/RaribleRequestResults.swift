@@ -14,18 +14,18 @@ struct WorkRequestResult: Codable {
 
 struct ArtWorkSellingStatus: Codable {
     
-    let dribbbleID: Int
+    let dribbbleWorkID: Int
     let urlRaribleNftString: String
-    let createdDate: String
+    let createdDateString: String
     
     var urlRaribleNft: URL? {
         return URL(string: urlRaribleNftString)
     }
 
     enum CodingKeys: String, CodingKey {
-        case dribbbleID = "dribbble_id"
+        case dribbbleWorkID = "dribbble_id"
         case urlRaribleNftString = "url"
-        case createdDate = "created"
+        case createdDateString = "created"
     }
 }
 

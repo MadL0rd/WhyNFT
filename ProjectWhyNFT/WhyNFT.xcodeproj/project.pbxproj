@@ -154,6 +154,7 @@
 		8981FD802656EBF000993B65 /* AlertPresentationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8981FD7F2656EBF000993B65 /* AlertPresentationViewController.swift */; };
 		8981FD822656EC5600993B65 /* AlertPresentationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8981FD812656EC5600993B65 /* AlertPresentationView.swift */; };
 		899AAFDB2656AC460066CA10 /* VibroGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899AAFDA2656AC460066CA10 /* VibroGenerator.swift */; };
+		89D672732692FED2001A066A /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D672722692FED2001A066A /* HistoryTableViewCell.swift */; };
 		89DD264B25DC9F0000AD2868 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DD264A25DC9F0000AD2868 /* R.generated.swift */; };
 		89DD277225DCFB2C00AD2868 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89DD277025DCFB2C00AD2868 /* Images.xcassets */; };
 		89DD277325DCFB2C00AD2868 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89DD277125DCFB2C00AD2868 /* Colors.xcassets */; };
@@ -354,6 +355,7 @@
 		8981FD7F2656EBF000993B65 /* AlertPresentationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPresentationViewController.swift; sourceTree = "<group>"; };
 		8981FD812656EC5600993B65 /* AlertPresentationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPresentationView.swift; sourceTree = "<group>"; };
 		899AAFDA2656AC460066CA10 /* VibroGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VibroGenerator.swift; sourceTree = "<group>"; };
+		89D672722692FED2001A066A /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
 		89DD264A25DC9F0000AD2868 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		89DD277025DCFB2C00AD2868 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		89DD277125DCFB2C00AD2868 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
@@ -1179,8 +1181,8 @@
 			children = (
 				89F275C326750A1E005DFA9F /* SalesHistoryOutput.swift */,
 				89F275C726750A1E005DFA9F /* SalesHistoryInput.swift */,
-				89F275BD26750A1E005DFA9F /* ViewModel */,
 				89F275C026750A1E005DFA9F /* Coordinator */,
+				89F275BD26750A1E005DFA9F /* ViewModel */,
 				89F275C426750A1E005DFA9F /* View */,
 			);
 			path = SalesHistory;
@@ -1189,8 +1191,8 @@
 		89F275BD26750A1E005DFA9F /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				89F275BE26750A1E005DFA9F /* SalesHistoryViewModel.swift */,
 				89F275BF26750A1E005DFA9F /* SalesHistoryViewModelProtocol.swift */,
+				89F275BE26750A1E005DFA9F /* SalesHistoryViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -1198,8 +1200,8 @@
 		89F275C026750A1E005DFA9F /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
-				89F275C126750A1E005DFA9F /* SalesHistoryCoordinator.swift */,
 				89F275C226750A1E005DFA9F /* SalesHistoryCoordinatorProtocol.swift */,
+				89F275C126750A1E005DFA9F /* SalesHistoryCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -1209,6 +1211,7 @@
 			children = (
 				89F275C626750A1E005DFA9F /* SalesHistoryViewController.swift */,
 				89F275C526750A1E005DFA9F /* SalesHistoryView.swift */,
+				89D672722692FED2001A066A /* HistoryTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1609,6 +1612,7 @@
 				8965F0EB26756E8000454B69 /* LightSelectionCollectionViewCell.swift in Sources */,
 				8965F1062675AE0D00454B69 /* PortfolioAuthenticationView.swift in Sources */,
 				897816482674C6BD00710B13 /* UIColor+resources.swift in Sources */,
+				89D672732692FED2001A066A /* HistoryTableViewCell.swift in Sources */,
 				8965F0E42675552E00454B69 /* ArtWork.swift in Sources */,
 				897816562674C93200710B13 /* DribbbleNetworkService.swift in Sources */,
 				896F4ADC2692BAB200E9F65C /* UIView+getAllSubviewsWithType.swift in Sources */,

@@ -7,4 +7,7 @@
 
 protocol SalesHistoryViewModelProtocol: AnyObject {
     
+    var history: [SalesHistoryObject] { get }
+    
+    func loadData(completion:  @escaping() -> Void)
 }
