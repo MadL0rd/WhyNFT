@@ -154,6 +154,8 @@
 		8981FD802656EBF000993B65 /* AlertPresentationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8981FD7F2656EBF000993B65 /* AlertPresentationViewController.swift */; };
 		8981FD822656EC5600993B65 /* AlertPresentationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8981FD812656EC5600993B65 /* AlertPresentationView.swift */; };
 		899AAFDB2656AC460066CA10 /* VibroGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899AAFDA2656AC460066CA10 /* VibroGenerator.swift */; };
+		899B077126931960007A0F16 /* PurchaseManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899B076F26931960007A0F16 /* PurchaseManagerProtocol.swift */; };
+		899B077226931960007A0F16 /* PurchaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899B077026931960007A0F16 /* PurchaseManager.swift */; };
 		89D672732692FED2001A066A /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D672722692FED2001A066A /* HistoryTableViewCell.swift */; };
 		89DD264B25DC9F0000AD2868 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DD264A25DC9F0000AD2868 /* R.generated.swift */; };
 		89DD277225DCFB2C00AD2868 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89DD277025DCFB2C00AD2868 /* Images.xcassets */; };
@@ -355,6 +357,8 @@
 		8981FD7F2656EBF000993B65 /* AlertPresentationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPresentationViewController.swift; sourceTree = "<group>"; };
 		8981FD812656EC5600993B65 /* AlertPresentationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPresentationView.swift; sourceTree = "<group>"; };
 		899AAFDA2656AC460066CA10 /* VibroGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VibroGenerator.swift; sourceTree = "<group>"; };
+		899B076F26931960007A0F16 /* PurchaseManagerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurchaseManagerProtocol.swift; sourceTree = "<group>"; };
+		899B077026931960007A0F16 /* PurchaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurchaseManager.swift; sourceTree = "<group>"; };
 		89D672722692FED2001A066A /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
 		89DD264A25DC9F0000AD2868 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		89DD277025DCFB2C00AD2868 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -1037,6 +1041,15 @@
 			path = AlertPresentationViewController;
 			sourceTree = "<group>";
 		};
+		899B076E26931960007A0F16 /* PurchaseManager */ = {
+			isa = PBXGroup;
+			children = (
+				899B076F26931960007A0F16 /* PurchaseManagerProtocol.swift */,
+				899B077026931960007A0F16 /* PurchaseManager.swift */,
+			);
+			path = PurchaseManager;
+			sourceTree = "<group>";
+		};
 		89F00A302542E16200D482F6 /* Constants */ = {
 			isa = PBXGroup;
 			children = (
@@ -1050,6 +1063,7 @@
 		89F00A3A2542E16200D482F6 /* BusinessLogicLayer */ = {
 			isa = PBXGroup;
 			children = (
+				899B076E26931960007A0F16 /* PurchaseManager */,
 				8978165C2674E36C00710B13 /* StorageService */,
 				8960BDC62676008000830681 /* RaribleNetworkService */,
 				8978164B2674C93200710B13 /* DribbbleNetworkService */,
@@ -1582,7 +1596,9 @@
 				8940645426122B7600DC682F /* NetworkService.swift in Sources */,
 				897816652674E36C00710B13 /* StorageItemKey.swift in Sources */,
 				8940645326122B7600DC682F /* DataParser.swift in Sources */,
+				899B077226931960007A0F16 /* PurchaseManager.swift in Sources */,
 				894064E62612308800DC682F /* UIColor+rgba.swift in Sources */,
+				899B077126931960007A0F16 /* PurchaseManagerProtocol.swift in Sources */,
 				8965F1152675C21700454B69 /* SettingsViewModelProtocol.swift in Sources */,
 				894065302612327C00DC682F /* LoadingInput.swift in Sources */,
 				8960BE022676050100830681 /* RaribleAuthenticationOutput.swift in Sources */,

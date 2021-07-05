@@ -9,11 +9,12 @@ import Foundation
 
 protocol SettingsViewModelProtocol: AnyObject {
     
-//    var termsOfUsageUrl: URL? { get }
-//    var privacyPolicyUrl: URL? { get }
-//    var supportUrl: URL? { get }
-//    
-//    func rateApp()
+    var termsOfUsageUrl: URL? { get }
+    var privacyPolicyUrl: URL? { get }
+    var supportUrl: URL? { get }
+    var aboutUsUrl: URL? { get }
+    
+    func rateApp()
         
     func disconnectFromDribbble()
     func logOutRarible()

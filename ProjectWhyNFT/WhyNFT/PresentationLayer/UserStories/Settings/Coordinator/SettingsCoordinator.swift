@@ -21,6 +21,7 @@ final class SettingsCoordinator: DefaultCoordinator {
         
         viewModel.dribbbleService = DribbbleNetworkService.shared
         viewModel.raribleService = RaribleNetworkService.shared
+        viewModel.purchaseManager = PurchaseManager.shared
 
         if let configuration = configuration {
             configuration(viewModel)

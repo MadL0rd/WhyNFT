@@ -69,11 +69,11 @@ final class SettingsViewController: UIViewController {
         module.rows.append(contentsOf: [
             .init(image: R.image.settingsSupport(),
                   title: R.string.localizable.settingsSupport(),
-                  action: {}),
+                  action: { UIApplication.shared.open(self.viewModel.supportUrl!) }),
             
             .init(image: R.image.settingsRateApp(),
                   title: R.string.localizable.settingsRateApp(),
-                  action: {})
+                  action: { self.viewModel.rateApp() })
         ])
         menu.append(module)
         
@@ -81,9 +81,7 @@ final class SettingsViewController: UIViewController {
         module.rows.append(contentsOf: [
             .init(image: R.image.settingsAboutUs(),
                   title: R.string.localizable.settingsAboutUs(),
-                  action: { [ weak self ] in
-                    self?.coordinator.openModule(.aboutUs, openingMode: .showInRootNavigationController)
-                  })
+                  action: { UIApplication.shared.open(self.viewModel.aboutUsUrl!) })
         ])
         menu.append(module)
         
@@ -91,10 +89,10 @@ final class SettingsViewController: UIViewController {
         module.rows.append(contentsOf: [
             .init(image: R.image.settingsDefault(),
                   title: R.string.localizable.settingsUserAgreement(),
-                  action: {}),
+                  action: { UIApplication.shared.open(self.viewModel.termsOfUsageUrl!) }),
             .init(image: R.image.settingsDefault(),
                   title: R.string.localizable.settingsPrivacyPolicy(),
-                  action: {})
+                  action: { UIApplication.shared.open(self.viewModel.privacyPolicyUrl!) })
         ])
         menu.append(module)
         
