@@ -81,5 +81,8 @@ extension SalesHistoryViewController: UITableViewDataSource, UITableViewDelegate
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.cellForRow(at: indexPath)?.tapAnimation()
+        if let content = history[exist: indexPath.row] {
+            coordinator.openWorkDetailsEditor(artWork: content.artwork)
+        }
     }
 }

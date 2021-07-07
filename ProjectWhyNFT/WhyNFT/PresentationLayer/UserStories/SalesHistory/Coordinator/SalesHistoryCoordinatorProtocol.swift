@@ -7,4 +7,5 @@
 
 protocol SalesHistoryCoordinatorProtocol: DefaultCoordinatorProtocol {
     
+    func openWorkDetailsEditor(artWork: ArtWork)
 }

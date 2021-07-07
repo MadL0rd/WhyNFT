@@ -33,4 +33,10 @@ final class SalesHistoryCoordinator: DefaultCoordinator {
 // MARK: - Interface for view
 extension SalesHistoryCoordinator: SalesHistoryCoordinatorProtocol {
 
+    func openWorkDetailsEditor(artWork: ArtWork) {
+        let vc = WorkDetailsEditorCoordinator.createModule { viewModel in
+            viewModel.artWork = artWork
+        }
+        transition.showInRootNavigationController(vc)
+    }
 }

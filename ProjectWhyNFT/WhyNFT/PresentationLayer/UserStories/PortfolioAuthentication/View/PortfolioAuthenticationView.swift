@@ -11,8 +11,11 @@ final class PortfolioAuthenticationView: UIView {
     
     let titleBackground = UIView()
     let titlesView = DoubleTitledView()
+    let infoButton = ButtonWithTouchSize()
     
     let itemsCollection = LightSelectionCollectionView()
+    
+    let hiddableButton = HiddableButton()
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -34,7 +37,7 @@ final class PortfolioAuthenticationView: UIView {
         
         addSubview(itemsCollection)
         itemsCollection.translatesAutoresizingMaskIntoConstraints = false
-        itemsCollection.selectedViewIsHidden = true
+        itemsCollection.selectedViewIsHidden = false
         
         addSubview(titleBackground)
         titleBackground.translatesAutoresizingMaskIntoConstraints = false
@@ -45,6 +48,14 @@ final class PortfolioAuthenticationView: UIView {
         titlesView.translatesAutoresizingMaskIntoConstraints = false
         titlesView.setTitles(title: R.string.localizable.portfolioAuthenticationTitle(),
                              subtitle: R.string.localizable.portfolioAuthenticationSubtitle())
+
+        infoButton.translatesAutoresizingMaskIntoConstraints = false
+        infoButton.setImage(.res.information())
+        infoButton.tintColor = .res.tintMain()
+        infoButton.setDefaultAreaPadding()
+        
+        addSubview(hiddableButton)
+        hiddableButton.translatesAutoresizingMaskIntoConstraints = false
 
         makeConstraints()
     }
@@ -60,10 +71,17 @@ final class PortfolioAuthenticationView: UIView {
             titleBackground.rightAnchor.constraint(equalTo: rightAnchor),
             titleBackground.bottomAnchor.constraint(equalTo: titlesView.bottomAnchor, constant: 24),
             
+            infoButton.widthAnchor.constraint(equalToConstant: 24),
+            infoButton.heightAnchor.constraint(equalToConstant: 24),
+
             itemsCollection.topAnchor.constraint(equalTo: titleBackground.bottomAnchor, constant: -80),
             itemsCollection.leftAnchor.constraint(equalTo: leftAnchor),
             itemsCollection.rightAnchor.constraint(equalTo: rightAnchor),
-            itemsCollection.bottomAnchor.constraint(equalTo: bottomAnchor)
+            itemsCollection.bottomAnchor.constraint(equalTo: bottomAnchor),
+            
+            hiddableButton.centerYAnchor.constraint(equalTo: centerYAnchor),
+            hiddableButton.widthAnchor.constraint(equalTo: widthAnchor),
+            hiddableButton.bottomAnchor.constraint(equalTo: bottomAnchor)
         ])
     }
 }

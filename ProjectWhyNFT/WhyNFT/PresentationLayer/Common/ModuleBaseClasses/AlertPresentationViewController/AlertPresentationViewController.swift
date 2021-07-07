@@ -50,17 +50,6 @@ class AlertPresentationViewController: UIViewController {
         view.addGestureRecognizer(pan)
     }
     
-    private func dismissThisController() {
-        if currentFraction > 0 {
-            _view.setTransitionViewState(fractionCompletionState: 1, animated: true)
-        } else {
-            _view.setTransitionViewState(fractionCompletionState: -1, animated: true)
-        }
-        DispatchQueue.main.asyncAfter(deadline: .now() + _view.duration) { [ weak self ] in
-            self?.dismissSelf()
-        }
-    }
-    
     // MARK: - UI elements actions
     
     @objc private func tapToDismissHandler(recognizer: UITapGestureRecognizer) {
@@ -109,6 +98,19 @@ class AlertPresentationViewController: UIViewController {
             dismissThisController()
         default:
             break
+        }
+    }
+    
+    // MARK: - Public methods
+    
+    func dismissThisController() {
+        if currentFraction > 0 {
+            _view.setTransitionViewState(fractionCompletionState: 1, animated: true)
+        } else {
+            _view.setTransitionViewState(fractionCompletionState: -1, animated: true)
+        }
+        DispatchQueue.main.asyncAfter(deadline: .now() + _view.duration) { [ weak self ] in
+            self?.dismissSelf()
         }
     }
 }

@@ -31,9 +31,10 @@
 
 // PortfolioAuthentication
 "portfolioAuthenticationTitle" = "Connect Portfolio";
-"portfolioAuthenticationSubtitle" = "Link the services you use to host your portfolio to create an NFT from your art";
+"portfolioAuthenticationSubtitle" = "We are focused on the professional community of designers, therefore we use works from portfolio sites.\nConnect your Dribbble to create NFTs from your dribbble-shots.";
 "portfolioAuthenticationDribbbleName" = "Dribbble";
 "portfolioAuthenticationBehanceName" = "Behance";
+"portfolioAuthenticationInformation" = "• We ask you to sign in your portfolio account in browser because it is the best way to make your private data completely safe. We use OAuth 2.0 protocol so this application has no access to your login and password. As a bonus you can automatically use stored passwords in Safary. Keep calm and protect your private data :)\n\n• This app is not affiliated with Dribbble Holdings Ltd and Adobe Inc.\n\n• Contact us if you still have a question";
 
 // RaribleAuthentication
 "raribleAuthenticationInputPlaceholder" = "ID Code";

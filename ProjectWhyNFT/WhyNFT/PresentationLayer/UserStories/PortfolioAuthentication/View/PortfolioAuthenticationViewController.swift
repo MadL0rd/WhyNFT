@@ -17,6 +17,16 @@ final class PortfolioAuthenticationViewController: UIViewController {
     private var _view: PortfolioAuthenticationView {
         return view as! PortfolioAuthenticationView
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+                
+        navigationController?.navigationBar.barStyle = .black
+        navigationController?.navigationBar.tintColor = R.color.tintMain()
+        navigationController?.navigationBar.topItem?.backButtonTitle = ""
+        
+        _view.itemsCollection.startGlowAnimation()
+    }
 
     override func loadView() {
         self.view = PortfolioAuthenticationView()
@@ -43,6 +53,26 @@ final class PortfolioAuthenticationViewController: UIViewController {
                   image: R.image.behanceIcon(),
                   isAvailable: false)
         ]
+        
+        _view.hiddableButton.button.addTarget(self, action: #selector(chooseButtonDidTapped(sender:)), for: .touchUpInside)
+        _view.infoButton.addTarget(self, action: #selector(showInfo(sender:)), for: .touchUpInside)
+        
+        let menuBarItem = UIBarButtonItem(customView: _view.infoButton)
+        navigationItem.rightBarButtonItem = menuBarItem
+    }
+    
+    // MARK: - UI elements actions
+
+    @objc private func chooseButtonDidTapped(sender: UIButton) {
+        guard let index = _view.itemsCollection.currentSelectedIndex,
+              let content = menu[exist: index]
+        else { return }
+        content.action?()
+    }
+    
+    @objc private func showInfo(sender: UIButton) {
+        sender.tapAnimation()
+        coordinator.openModule(.portfolioAuthInformation)
     }
 }
 
@@ -61,11 +91,11 @@ extension PortfolioAuthenticationViewController: LightSelectionCollectionViewDel
     }
     
     func lightSelectionCollectionView(_ collection: LightSelectionCollectionView, itemDidTapped itemIndex: Int) {
-        menu[itemIndex].action?()
+        
     }
     
     func lightSelectionCollectionView(_ collection: LightSelectionCollectionView, selectedItemDidChanged itemIndex: Int?) {
-        
+        _view.hiddableButton.manageVisibility(hidden: itemIndex == nil)
     }
     
     func lightSelectionCollectionView(tooltipFor collection: LightSelectionCollectionView, itemLongPressStart itemIndex: Int) -> String? {

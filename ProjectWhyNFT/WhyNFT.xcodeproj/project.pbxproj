@@ -156,6 +156,15 @@
 		899AAFDB2656AC460066CA10 /* VibroGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899AAFDA2656AC460066CA10 /* VibroGenerator.swift */; };
 		899B077126931960007A0F16 /* PurchaseManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899B076F26931960007A0F16 /* PurchaseManagerProtocol.swift */; };
 		899B077226931960007A0F16 /* PurchaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899B077026931960007A0F16 /* PurchaseManager.swift */; };
+		899B0774269514E0007A0F16 /* UIButton+setContentForAllStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899B0773269514DF007A0F16 /* UIButton+setContentForAllStates.swift */; };
+		899B078726951D40007A0F16 /* PortfolioAuthInformationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899B077D26951D40007A0F16 /* PortfolioAuthInformationViewModel.swift */; };
+		899B078826951D40007A0F16 /* PortfolioAuthInformationViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899B077E26951D40007A0F16 /* PortfolioAuthInformationViewModelProtocol.swift */; };
+		899B078926951D40007A0F16 /* PortfolioAuthInformationOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899B077F26951D40007A0F16 /* PortfolioAuthInformationOutput.swift */; };
+		899B078A26951D40007A0F16 /* PortfolioAuthInformationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899B078126951D40007A0F16 /* PortfolioAuthInformationCoordinator.swift */; };
+		899B078B26951D40007A0F16 /* PortfolioAuthInformationCoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899B078226951D40007A0F16 /* PortfolioAuthInformationCoordinatorProtocol.swift */; };
+		899B078C26951D40007A0F16 /* PortfolioAuthInformationInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899B078326951D40007A0F16 /* PortfolioAuthInformationInput.swift */; };
+		899B078D26951D40007A0F16 /* PortfolioAuthInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899B078526951D40007A0F16 /* PortfolioAuthInformationViewController.swift */; };
+		899B078E26951D40007A0F16 /* PortfolioAuthInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899B078626951D40007A0F16 /* PortfolioAuthInformationView.swift */; };
 		89D672732692FED2001A066A /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D672722692FED2001A066A /* HistoryTableViewCell.swift */; };
 		89DD264B25DC9F0000AD2868 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DD264A25DC9F0000AD2868 /* R.generated.swift */; };
 		89DD277225DCFB2C00AD2868 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89DD277025DCFB2C00AD2868 /* Images.xcassets */; };
@@ -359,6 +368,15 @@
 		899AAFDA2656AC460066CA10 /* VibroGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VibroGenerator.swift; sourceTree = "<group>"; };
 		899B076F26931960007A0F16 /* PurchaseManagerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurchaseManagerProtocol.swift; sourceTree = "<group>"; };
 		899B077026931960007A0F16 /* PurchaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurchaseManager.swift; sourceTree = "<group>"; };
+		899B0773269514DF007A0F16 /* UIButton+setContentForAllStates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+setContentForAllStates.swift"; sourceTree = "<group>"; };
+		899B077D26951D40007A0F16 /* PortfolioAuthInformationViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortfolioAuthInformationViewModel.swift; sourceTree = "<group>"; };
+		899B077E26951D40007A0F16 /* PortfolioAuthInformationViewModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortfolioAuthInformationViewModelProtocol.swift; sourceTree = "<group>"; };
+		899B077F26951D40007A0F16 /* PortfolioAuthInformationOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortfolioAuthInformationOutput.swift; sourceTree = "<group>"; };
+		899B078126951D40007A0F16 /* PortfolioAuthInformationCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortfolioAuthInformationCoordinator.swift; sourceTree = "<group>"; };
+		899B078226951D40007A0F16 /* PortfolioAuthInformationCoordinatorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortfolioAuthInformationCoordinatorProtocol.swift; sourceTree = "<group>"; };
+		899B078326951D40007A0F16 /* PortfolioAuthInformationInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortfolioAuthInformationInput.swift; sourceTree = "<group>"; };
+		899B078526951D40007A0F16 /* PortfolioAuthInformationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortfolioAuthInformationViewController.swift; sourceTree = "<group>"; };
+		899B078626951D40007A0F16 /* PortfolioAuthInformationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortfolioAuthInformationView.swift; sourceTree = "<group>"; };
 		89D672722692FED2001A066A /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
 		89DD264A25DC9F0000AD2868 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		89DD277025DCFB2C00AD2868 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -590,6 +608,7 @@
 				894064C52612308800DC682F /* UITextField+placeholderPadding.swift */,
 				897816472674C6BD00710B13 /* UIColor+resources.swift */,
 				896F4ADB2692BAB200E9F65C /* UIView+getAllSubviewsWithType.swift */,
+				899B0773269514DF007A0F16 /* UIButton+setContentForAllStates.swift */,
 			);
 			path = UIExtensions;
 			sourceTree = "<group>";
@@ -1050,6 +1069,45 @@
 			path = PurchaseManager;
 			sourceTree = "<group>";
 		};
+		899B077B26951D40007A0F16 /* PortfolioAuthInformation */ = {
+			isa = PBXGroup;
+			children = (
+				899B077F26951D40007A0F16 /* PortfolioAuthInformationOutput.swift */,
+				899B078326951D40007A0F16 /* PortfolioAuthInformationInput.swift */,
+				899B078026951D40007A0F16 /* Coordinator */,
+				899B077C26951D40007A0F16 /* ViewModel */,
+				899B078426951D40007A0F16 /* View */,
+			);
+			path = PortfolioAuthInformation;
+			sourceTree = "<group>";
+		};
+		899B077C26951D40007A0F16 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				899B077E26951D40007A0F16 /* PortfolioAuthInformationViewModelProtocol.swift */,
+				899B077D26951D40007A0F16 /* PortfolioAuthInformationViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		899B078026951D40007A0F16 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				899B078226951D40007A0F16 /* PortfolioAuthInformationCoordinatorProtocol.swift */,
+				899B078126951D40007A0F16 /* PortfolioAuthInformationCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		899B078426951D40007A0F16 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				899B078526951D40007A0F16 /* PortfolioAuthInformationViewController.swift */,
+				899B078626951D40007A0F16 /* PortfolioAuthInformationView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		89F00A302542E16200D482F6 /* Constants */ = {
 			isa = PBXGroup;
 			children = (
@@ -1140,6 +1198,7 @@
 				894064A126122D0100DC682F /* UserStoriesModulesAccounting.swift */,
 				8940651D2612327B00DC682F /* Loading */,
 				8965F0F42675AE0C00454B69 /* PortfolioAuthentication */,
+				899B077B26951D40007A0F16 /* PortfolioAuthInformation */,
 				8960BDEF2676050100830681 /* RaribleAuthentication */,
 				8978166B2674EE1D00710B13 /* MainMenu */,
 				89F275BC26750A1E005DFA9F /* SalesHistory */,
@@ -1481,6 +1540,7 @@
 				894064E02612308800DC682F /* UIViewController+addChildViewControllerToView.swift in Sources */,
 				8965F1322675CC4300454B69 /* AboutUsCoordinator.swift in Sources */,
 				897816582674C93200710B13 /* DribbbleRequestResults.swift in Sources */,
+				899B078C26951D40007A0F16 /* PortfolioAuthInformationInput.swift in Sources */,
 				899AAFDB2656AC460066CA10 /* VibroGenerator.swift in Sources */,
 				8965F14C2675DAD900454B69 /* WorkDetailsEditorCoordinator.swift in Sources */,
 				89F275D326750A1E005DFA9F /* WorksCoordinatorProtocol.swift in Sources */,
@@ -1498,10 +1558,12 @@
 				894064DA2612308800DC682F /* PickerViewManager.swift in Sources */,
 				8960BE002676050100830681 /* RaribleAuthenticationView.swift in Sources */,
 				8978167B2674EE1D00710B13 /* MainMenuInput.swift in Sources */,
+				899B078926951D40007A0F16 /* PortfolioAuthInformationOutput.swift in Sources */,
 				894064E72612308800DC682F /* UIScrollView+ScrollToBottom.swift in Sources */,
 				89F275DF26750A1E005DFA9F /* SalesHistoryInput.swift in Sources */,
 				894064A226122D0100DC682F /* UserStoriesModulesAccounting.swift in Sources */,
 				89F00AB32542E16200D482F6 /* AppDelegate.swift in Sources */,
+				899B078A26951D40007A0F16 /* PortfolioAuthInformationCoordinator.swift in Sources */,
 				89F00AB02542E16200D482F6 /* AppRouter.swift in Sources */,
 				89F275D726750A1E005DFA9F /* WorksView.swift in Sources */,
 				892B1FA3261D2EA200329B0A /* Array+safeIndex.swift in Sources */,
@@ -1536,6 +1598,7 @@
 				894B1EBE26751AAB00EF8277 /* LabelMixedFont.swift in Sources */,
 				894064DF2612308800DC682F /* UIImageView+setDefaultLoadingInicator.swift in Sources */,
 				8965F1212675C5A600454B69 /* Array+isNotEmpty.swift in Sources */,
+				899B078E26951D40007A0F16 /* PortfolioAuthInformationView.swift in Sources */,
 				89F275D926750A1E005DFA9F /* SalesHistoryViewModelProtocol.swift in Sources */,
 				8960BDD62676008000830681 /* RaribleRequestBuilder.swift in Sources */,
 				897816632674E36C00710B13 /* SecureStorage.swift in Sources */,
@@ -1543,9 +1606,12 @@
 				89F275DB26750A1E005DFA9F /* SalesHistoryCoordinatorProtocol.swift in Sources */,
 				8965F1302675CC4300454B69 /* AboutUsViewModelProtocol.swift in Sources */,
 				897FC3D9261690DC002352E7 /* UIViewController+alert.swift in Sources */,
+				899B0774269514E0007A0F16 /* UIButton+setContentForAllStates.swift in Sources */,
 				8965F1022675AE0D00454B69 /* PortfolioAuthenticationCoordinator.swift in Sources */,
 				894064EE2612308800DC682F /* PaddingLabel.swift in Sources */,
 				8978167D2674EE1D00710B13 /* MainMenuViewController.swift in Sources */,
+				899B078826951D40007A0F16 /* PortfolioAuthInformationViewModelProtocol.swift in Sources */,
+				899B078726951D40007A0F16 /* PortfolioAuthInformationViewModel.swift in Sources */,
 				89F275DE26750A1E005DFA9F /* SalesHistoryViewController.swift in Sources */,
 				8965F1312675CC4300454B69 /* AboutUsViewModel.swift in Sources */,
 				8965F1392675D38900454B69 /* HiddableButton.swift in Sources */,
@@ -1585,6 +1651,7 @@
 				8965F11A2675C21700454B69 /* SettingsTableViewCell.swift in Sources */,
 				8960BE012676050100830681 /* RaribleAuthenticationViewController.swift in Sources */,
 				89F00AB12542E16200D482F6 /* MainAppRouter.swift in Sources */,
+				899B078B26951D40007A0F16 /* PortfolioAuthInformationCoordinatorProtocol.swift in Sources */,
 				8965F1192675C21700454B69 /* SettingsView.swift in Sources */,
 				8960BDFD2676050100830681 /* RaribleAuthenticationInput.swift in Sources */,
 				89F2759D2675056A005DFA9F /* CustomTabBar.swift in Sources */,
@@ -1634,6 +1701,7 @@
 				896F4ADC2692BAB200E9F65C /* UIView+getAllSubviewsWithType.swift in Sources */,
 				8978165B2674C93200710B13 /* DribbbleRequestBuilder.swift in Sources */,
 				8965F1502675DAD900454B69 /* WorkDetailsEditorInput.swift in Sources */,
+				899B078D26951D40007A0F16 /* PortfolioAuthInformationViewController.swift in Sources */,
 				89F00A9D2542E16200D482F6 /* UIConstants.swift in Sources */,
 				892B1F9F261D2EA200329B0A /* SKProduct+localizedPrice.swift in Sources */,
 				8978165A2674C93200710B13 /* DribbbleRoutes.swift in Sources */,

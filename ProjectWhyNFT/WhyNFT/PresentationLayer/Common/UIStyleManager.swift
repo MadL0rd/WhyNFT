@@ -33,6 +33,12 @@ class UIStyleManager {
         view.layer.shadowOffset = CGSize(width: 0, height: 4)
     }
     
+    static func defaultBorder(_ view: UIView) {
+        view.layer.borderWidth = 1
+        view.layer.borderColor = R.color.tintMain()?.cgColor
+        view.layer.cornerRadius = 16
+    }
+    
     // MARK: - UINavigationController
     
     static func navigationControllerTransparent(_ controller: UINavigationController) {
